@@ -33,7 +33,10 @@ DTSTART;TZID=America/New_York:20260123T000000
 DTEND;TZID=America/New_York:20260124T000000
 RRULE:FREQ=DAILY;UNTIL=20260722T235959
 LOCATION:Djibouti
-DESCRIPTION:If you have any questions or concerns, contact PBS Kids.
+DESCRIPTION: 1 Samuel 18:27 
+"...He brought their foreskins and presented them as full payment to the king to become his son-in-law."
+
+If you have any questions or concerns, contact PBS Kids.
 URL:https://pbskids.org/
 
 BEGIN:VALARM
