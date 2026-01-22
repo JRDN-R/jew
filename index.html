@@ -14,56 +14,19 @@
   <meta name="twitter:card" content="summary_large_image" />
 
   <title>Grace Reminders</title>
-</head>
 
-<body style="font-family:-apple-system,system-ui,Arial,sans-serif;padding:20px;">
-  <audio id="bg" preload="auto" autoplay loop playsinline>
-    <source src="https://raw.githubusercontent.com/JRDN-R/jew/9818c3b1f2f16445289063c5a4f814fd36d0d5b8/pny.mp3" type="audio/mpeg">
-  </audio>
-
-  <p id="status">Opening Calendar…</p>
-
-  <p id="fallback" style="display:none;">
-    <button id="tap" style="font-size:16px;padding:12px 16px;">
-      Tap to play audio + open Calendar
-    </button>
-  </p>
-
-  <p style="margin-top:14px;">
-    <a id="sub" href="#">Subscribe (Apple Calendar)</a>
-  </p>
-  <p>
-    <a id="dl" href="#">Download / Open .ics</a>
-  </p>
+  <meta http-equiv="refresh" content="0; url=webcal://raw.githubusercontent.com/JRDN-R/jew/a3457acd2701c993dec72501f6a6234db9094225/grace.ics" />
 
   <script>
     const WEBCAL_URL = "webcal://raw.githubusercontent.com/JRDN-R/jew/a3457acd2701c993dec72501f6a6234db9094225/grace.ics";
-    const HTTPS_ICS  = "https://raw.githubusercontent.com/JRDN-R/jew/a3457acd2701c993dec72501f6a6234db9094225/grace.ics";
-
-    document.getElementById("sub").href = WEBCAL_URL;
-    document.getElementById("dl").href  = HTTPS_ICS;
-
-    function goCalendar() {
-      window.location.replace(WEBCAL_URL);
-      setTimeout(() => { window.location.href = WEBCAL_URL; }, 250);
-    }
-
-    const audio = document.getElementById("bg");
-
-    // Try to start audio immediately; if it works, jump to calendar.
-    // If blocked (common on iOS), show a single tap button that starts audio then opens calendar.
-    Promise.resolve()
-      .then(() => audio.play())
-      .then(() => setTimeout(goCalendar, 350))
-      .catch(() => {
-        document.getElementById("status").textContent = "Tap required to start audio.";
-        document.getElementById("fallback").style.display = "block";
-      });
-
-    document.getElementById("tap").addEventListener("click", async () => {
-      try { await audio.play(); } catch (e) {}
-      goCalendar();
-    });
+    window.location.replace(WEBCAL_URL);
+    setTimeout(() => { window.location.href = WEBCAL_URL; }, 250);
   </script>
+</head>
+
+<body style="font-family:-apple-system,system-ui,Arial,sans-serif;padding:20px;">
+  <p>Opening Calendar…</p>
+  <p><a href="webcal://raw.githubusercontent.com/JRDN-R/jew/a3457acd2701c993dec72501f6a6234db9094225/grace.ics">Subscribe (Apple Calendar)</a></p>
+  <p><a href="https://raw.githubusercontent.com/JRDN-R/jew/a3457acd2701c993dec72501f6a6234db9094225/grace.ics">Download / Open .ics</a></p>
 </body>
 </html>
