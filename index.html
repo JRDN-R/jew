@@ -4,30 +4,30 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#10131c">
-<meta name="description" content="Join M4A voice memos in the order you add them and save one MP3. Your audio stays on your device.">
-<title>Voice Memo Joiner</title>
+<meta name="description" content="Just Encode Whatever. Join common audio and video files in order and export their audio as one MP3. Your files stay on your device.">
+<title>Just Encode Whatever</title>
 <style>
 :root{color-scheme:dark;--bg:#10131c;--surface:#191e2a;--well:#121722;--line:#303847;--ink:#f4f6fa;--muted:#b2bacb;--accent:#ff735f;--focus:#ffd2c7;--success:#a9e3c4;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);line-height:1.5}button,input,a{-webkit-tap-highlight-color:transparent}button,input{font:inherit}button,.button{border:1px solid var(--line);border-radius:12px;background:#252d3c;color:var(--ink);padding:12px 18px;min-height:48px;cursor:pointer;font-weight:650;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:9px;line-height:1.3}button:hover:not(:disabled),.button:hover{background:#303b4e}button:disabled{opacity:.45;cursor:not-allowed}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:4px}.primary{background:var(--accent);border-color:var(--accent);color:#201310}.primary:hover:not(:disabled){background:#ff9382}.quiet{background:transparent;border-color:transparent;color:var(--muted);font-weight:500;padding:10px}.icon{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.app{max-width:1060px;padding:44px 28px max(32px,env(safe-area-inset-bottom));margin:auto}.masthead{display:flex;align-items:center;gap:15px;margin-bottom:34px}.mark{width:49px;height:49px;background:#382523;color:var(--accent);border-radius:15px;display:grid;place-items:center}.mark svg{width:28px;height:28px}h1{font-size:clamp(1.65rem,4vw,2.1rem);line-height:1.2;letter-spacing:-.045em;margin:0}h2{font-size:1.13rem;letter-spacing:-.02em;margin:0}p{margin:8px 0;color:var(--muted)}.subhead{margin:7px 0 0;font-size:.94rem}.format{margin-left:auto;white-space:nowrap;color:var(--muted);font-size:.875rem;letter-spacing:.06em}.layout{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:24px;align-items:start}.panel{background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden}.panel-head{padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:10px}.count{font-size:.875rem;color:var(--muted);margin-top:4px}.drop{margin:0 20px 20px;padding:28px 20px;border:1px dashed #536079;border-radius:14px;background:var(--well);text-align:center;transition:background .15s,border-color .15s}.drop.dragging{background:#3a2629;border-color:var(--accent)}.drop p{font-size:.875rem;margin:12px 0 0}.drop .primary{padding:14px 25px}.empty{text-align:center;padding:22px 24px 38px}.empty strong{font-size:1rem;font-weight:550}.empty p{font-size:.875rem;max-width:310px;margin:8px auto 0}.clips{list-style:none;padding:0 20px;margin:0 0 16px}.clip{position:relative;display:grid;grid-template-columns:36px minmax(0,1fr);gap:12px;padding:18px 0;border-top:1px solid var(--line)}.number{align-self:start;width:32px;height:32px;border-radius:50%;background:#2e3545;display:grid;place-items:center;font-size:.875rem;font-variant-numeric:tabular-nums}.clip.processing .number{background:var(--accent);color:#201310}.clip-name{margin:2px 0 2px;font-size:1rem;font-weight:550;overflow-wrap:anywhere}.clip-meta{color:var(--muted);font-size:.875rem;font-variant-numeric:tabular-nums}.clip-tools{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:9px}.clip-tools button{min-width:44px;min-height:44px;padding:9px}.clip-tools .remove{margin-left:auto;color:#ffc2b9}.clip-tools .preview{font-size:.875rem;font-weight:500;padding:9px 11px}.clip audio{width:100%;margin-top:12px;display:block;height:42px}.order-note{padding:0 24px 22px;font-size:.875rem;margin:0}.export{padding:24px;position:sticky;top:24px}.eyebrow{font-size:.75rem;color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-weight:700;margin-bottom:8px}.export label{display:block;font-size:.875rem;font-weight:550;margin:24px 0 8px}.filename{display:flex;align-items:center;border:1px solid #49536a;border-radius:10px;background:var(--well);padding-right:12px}.filename input{width:100%;min-width:0;border:0;border-radius:10px;background:transparent;color:var(--ink);padding:12px;font-size:1rem}.filename span{color:var(--muted);font-size:.875rem}.settings{display:flex;justify-content:space-between;font-size:.875rem;margin:19px 0;color:var(--muted)}#exportButton{width:100%}.privacy{display:flex;align-items:center;gap:7px;font-size:.8rem;margin-top:17px}.privacy svg{width:16px;height:16px}.progress-area{margin-top:20px;border-top:1px solid var(--line);padding-top:19px}.progress-label{font-size:.875rem;margin:0 0 10px;color:var(--ink);overflow-wrap:anywhere}progress{display:block;width:100%;height:8px;border:0;border-radius:8px;overflow:hidden;background:#303847}progress::-webkit-progress-bar{background:#303847}progress::-webkit-progress-value{background:var(--accent);border-radius:8px}progress::-moz-progress-bar{background:var(--accent)}.progress-bottom{display:flex;align-items:center;justify-content:space-between;font-size:.8rem;color:var(--muted);gap:8px;margin-top:7px}.keep-open{font-size:.8rem;margin:6px 0 0}.error{margin:0 0 20px;padding:14px 17px;border:1px solid #895044;background:#372222;border-radius:12px;color:#ffd0c7;overflow-wrap:anywhere;font-size:.94rem}.result{margin-top:24px;padding:22px 24px;background:#182b27;border:1px solid #395b50;border-radius:16px}.result h2{color:var(--success)}.result p{font-size:.875rem;overflow-wrap:anywhere}.result audio{display:block;width:100%;margin:18px 0}.result-buttons{display:flex;gap:10px;flex-wrap:wrap}.result-buttons .button{background:#b9ecd3;color:#11291e;border-color:#b9ecd3}.result-buttons button{background:transparent}.help{margin-top:30px;color:var(--muted);font-size:.875rem}.help summary{cursor:pointer;color:var(--ink);padding:9px 0;min-height:44px}.help ol{padding-left:21px;max-width:740px}.help li{margin:9px 0}.help a{color:var(--muted)}.footer{font-size:.8rem;color:var(--muted);margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}.footer a{color:inherit}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}@media(max-width:760px){.app{padding:28px 18px max(28px,env(safe-area-inset-bottom))}.masthead{margin-bottom:26px;gap:12px}.format{display:none}.layout{grid-template-columns:1fr;gap:18px}.export{position:static}.panel-head{padding:18px 20px}.drop{padding:24px 15px}.result{margin-top:18px;padding:20px}.subhead{font-size:.875rem}.help{margin-top:22px}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
 <main class="app">
-  <header class="masthead"><div class="mark" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="13" rx="4"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3M8 22h8"/></svg></div><div><h1>Voice Memo Joiner</h1><p class="subhead">Add your clips. Save one MP3.</p></div><span class="format">M4A → MP3</span></header>
+  <header class="masthead"><div class="mark" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="13" rx="4"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3M8 22h8"/></svg></div><div><h1>Just Encode Whatever</h1><p class="subhead">Add audio or video. Save one MP3.</p></div><span class="format">Audio / Video → MP3</span></header>
   <noscript><p class="error">Open this page in a browser with JavaScript enabled to join your audio.</p></noscript>
   <p id="error" class="error" role="alert" hidden></p>
   <div class="layout">
     <section class="panel" aria-labelledby="clipsHeading">
       <div class="panel-head"><div><h2 id="clipsHeading">Your clips</h2><div id="count" class="count" aria-live="polite">No clips added</div></div><button id="clearButton" class="quiet" disabled>Clear all</button></div>
-      <div id="dropZone" class="drop"><input id="fileInput" class="sr-only" type="file" accept="audio/*,.m4a,.mp4,.aac,.mp3,.wav,.aif,.aiff,.caf,.flac,.ogg,.webm" multiple tabindex="-1" aria-label="Select audio clips"><button id="addButton" class="primary"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Add audio clips</button><p>M4A voice memos, MP3, WAV, and more.<br>Choose multiple files or drop them here.</p></div>
+      <div id="dropZone" class="drop"><input id="fileInput" class="sr-only" type="file" accept="audio/*,video/*,.mp3,.m4a,.wav,.flac,.ogg,.wma,.mov,.mp4,.mkv,.webm,.avi" multiple tabindex="-1" aria-label="Select audio or video clips"><button id="addButton" class="primary"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Add audio or video</button><p>MP3, M4A, WAV, FLAC, MOV, MP4, and more.<br>Choose files or drop them here. Videos export as audio only.</p></div>
       <div id="empty" class="empty"><strong>First added, first played.</strong><p>Your clips join from top to bottom, with no extra gaps.</p></div>
       <ol id="clipList" class="clips" aria-label="Clips in export order"></ol>
       <p id="orderNote" class="order-note" hidden>New clips go at the end. Use the arrows if you need to adjust the order.</p>
     </section>
-    <section class="panel export" aria-labelledby="exportHeading"><div class="eyebrow">One finished recording</div><h2 id="exportHeading">Export MP3</h2><label for="outputName">File name</label><div class="filename"><input id="outputName" type="text" value="Combined voice memos" maxlength="120" autocomplete="off" spellcheck="false"><span>.mp3</span></div><div class="settings"><span>MP3 · Stereo</span><span>192 kbps</span></div><button id="exportButton" class="primary" disabled><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 15v5h14v-5"/></svg>Join &amp; export MP3</button><p class="privacy"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0v4"/></svg>Your audio stays on your device.</p><div id="progressArea" class="progress-area" hidden><p id="progressLabel" class="progress-label" role="status">Preparing…</p><progress id="progress" value="0" max="100" aria-label="MP3 export progress"></progress><div class="progress-bottom"><span id="percent">0%</span><button id="cancelButton" class="quiet">Cancel</button></div><p class="keep-open">Keep this page open until the export finishes.</p></div></section>
+    <section class="panel export" aria-labelledby="exportHeading"><div class="eyebrow">One finished recording</div><h2 id="exportHeading">Export MP3</h2><label for="outputName">File name</label><div class="filename"><input id="outputName" type="text" value="Combined audio" maxlength="120" autocomplete="off" spellcheck="false"><span>.mp3</span></div><div class="settings"><span>MP3 · Stereo</span><span>192 kbps</span></div><button id="exportButton" class="primary" disabled><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 15v5h14v-5"/></svg>Join &amp; export MP3</button><p class="privacy"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0v4"/></svg>Your files stay on your device.</p><div id="progressArea" class="progress-area" hidden><p id="progressLabel" class="progress-label" role="status">Preparing…</p><progress id="progress" value="0" max="100" aria-label="MP3 export progress"></progress><div class="progress-bottom"><span id="percent">0%</span><button id="cancelButton" class="quiet">Cancel</button></div><p class="keep-open">Keep this page open until the export finishes.</p></div></section>
   </div>
   <section id="result" class="result" aria-labelledby="resultHeading" hidden><h2 id="resultHeading" tabindex="-1">Your MP3 is ready</h2><p id="resultInfo"></p><audio id="resultPlayer" controls preload="metadata" aria-label="Play combined MP3"></audio><div class="result-buttons"><a id="downloadLink" class="button" download>Download MP3</a><button id="shareButton" hidden>Share / Save to Files</button></div><p id="saveHint">On iPhone, use Share / Save to Files, then choose Save to Files.</p></section>
-  <details class="help"><summary>Using iPhone Voice Memos</summary><ol><li>In Voice Memos, select your recordings, tap Share, then <strong>Save to Files</strong>.</li><li>Open this page in Safari, tap <strong>Add audio clips</strong>, and select your exported recordings.</li><li>Check the numbered order, then tap <strong>Join &amp; export MP3</strong>. Save the finished file using the buttons above.</li></ol><p>iPhone may return a group of selected files in its own order. To guarantee your intended sequence, add clips one at a time or use the arrows after adding them.</p><p>M4A decoding depends on your browser and the audio inside the file. Safari is the best place to try an iPhone export. Large individual recordings need more device memory. Keep this page open; reloading clears your clips.</p><p>Clips are placed directly back to back. Any silence already in a recording stays in it.</p></details>
-  <footer class="footer"><span>Voice Memo Joiner</span><a href="https://github.com/zhuker/lamejs" target="_blank" rel="noopener noreferrer">MP3 encoder: lamejs · LGPL</a><a href="https://lame.sourceforge.net" target="_blank" rel="noopener noreferrer">LAME</a></footer>
+  <details class="help"><summary>Using iPhone Voice Memos</summary><ol><li>In Voice Memos, select your recordings, tap Share, then <strong>Save to Files</strong>.</li><li>Open this page in Safari, tap <strong>Add audio or video</strong>, and select your exported recordings.</li><li>Check the numbered order, then tap <strong>Join &amp; export MP3</strong>. Save the finished file using the buttons above.</li></ol><p>iPhone may return a group of selected files in its own order. To guarantee your intended sequence, add clips one at a time or use the arrows after adding them.</p><p>Common audio formats include MP3, M4A, AAC, WAV, AIFF, FLAC, OGG, Opus, WMA, and CAF. You can also add MOV, MP4, MKV, WebM, AVI, and other common videos. The first audio track from each video is used; videos without audio cannot be exported.</p><p>Some formats need an extra decoder, downloaded the first time it is needed, about 31 MB. Your files are processed on this device. Protected files and some codecs cannot be converted. Large files need more memory. Keep this page open; reloading clears your clips.</p><p>Preview playback depends on your browser. A clip that cannot preview may still export.</p><p>Clips are placed directly back to back. Any silence already in a recording stays in it.</p></details>
+  <footer class="footer"><span>Just Encode Whatever</span><a href="https://github.com/zhuker/lamejs" target="_blank" rel="noopener noreferrer">MP3 encoder: lamejs · LGPL</a><a href="https://lame.sourceforge.net" target="_blank" rel="noopener noreferrer">LAME</a><a href="https://github.com/ffmpegwasm/ffmpeg.wasm" target="_blank" rel="noopener noreferrer">Media decoder: FFmpeg.wasm</a></footer>
 </main>
 <script id="encoder-source" type="text/plain">/* lamejs, unchanged upstream source. https://github.com/zhuker/lamejs
 Can I use LAME in my commercial program?  
@@ -374,6 +374,43 @@ self.onmessage = function(event) {
   } catch(error) { self.postMessage({id,error:error.message || 'MP3 encoding failed.'}); }
 };
 </script>
+<script id="decoder-source" type="text/plain">
+// Single-thread FFmpeg core: no SharedArrayBuffer or special hosting headers.
+let core = null;
+self.onmessage = async ({data: {id, type, coreURL, wasmURL, file}}) => {
+  try {
+    if(type === 'init') {
+      importScripts(coreURL);
+      core = await createFFmpegCore({mainScriptUrlOrBlob: coreURL + '#' + btoa(JSON.stringify({wasmURL}))});
+      core.FS.mkdir('/input');
+      self.postMessage({id, ok: true});
+    } else if(type === 'decode') {
+      let mounted = false, logs = [];
+      try {
+        core.setLogger(({message}) => {logs.push(message); if(logs.length > 40) logs.shift();});
+        // Read the File on demand instead of copying a whole video into WASM memory.
+        core.FS.mount(core.FS.filesystems.WORKERFS, {blobs: [{name: 'source', data: file}]}, '/input');
+        mounted = true;
+        core.exec('-hide_banner', '-loglevel', 'error', '-i', '/input/source',
+          '-map', '0:a:0', '-vn', '-sn', '-dn', '-ac', '2', '-ar', '44100',
+          '-c:a', 'pcm_f32le', '-f', 'f32le', '/audio.f32');
+        if(core.ret !== 0) {
+          if(/matches no streams|does not contain any stream/i.test(logs.join('\n')))
+            throw new Error('This file has no audio track. Choose a video with sound or an audio file.');
+          throw new Error('Could not read the audio. The file may be damaged, protected, or use an unsupported codec. Try a shorter clip if memory is low.');
+        }
+        const pcm = core.FS.readFile('/audio.f32');
+        if(!pcm.length || pcm.length % 8) throw new Error('This file has no readable audio.');
+        self.postMessage({id, pcm}, [pcm.buffer]);
+      } finally {
+        if(mounted) core.FS.unmount('/input');
+        try {core.FS.unlink('/audio.f32');} catch(_) {}
+        core.reset();
+      }
+    } else throw new Error('Unknown decoder request.');
+  } catch(error) {self.postMessage({id, error: error.message || 'The media decoder could not process this file.'});}
+};
+</script>
 <script id="app-source">
 (() => {
 'use strict';
@@ -381,6 +418,13 @@ const $=id=>document.getElementById(id);
 const clips=[];
 let nextId=1, busy=false, run=null, output=null;
 const SAMPLE_RATE=44100, CHUNK=1152*96;
+const AUDIO_EXTENSIONS=['mp3','m4a','m4b','aac','wav','wave','aif','aiff','aifc','caf','flac','ogg','oga','opus','wma','amr','3ga','ac3','aiffc','au','snd','mka','mp2','a52','ape','wv'];
+const VIDEO_EXTENSIONS=['mov','mp4','m4v','webm','mkv','avi','mpg','mpeg','mpe','m2v','mts','m2ts','ts','m2t','3gp','3g2','wmv','asf','flv','f4v','vob','ogv'];
+const MEDIA_EXTENSIONS=new Set([...AUDIO_EXTENSIONS,...VIDEO_EXTENSIONS]);
+const extension=file=>file.name.split('.').pop().toLowerCase();
+const isVideo=file=>file.type.startsWith('video/')||VIDEO_EXTENSIONS.includes(extension(file));
+const isMedia=file=>file.size>0&&(/^(audio|video)\//i.test(file.type)||MEDIA_EXTENSIONS.has(extension(file)));
+$('fileInput').accept='audio/*,video/*,'+[...MEDIA_EXTENSIONS].map(ext=>'.'+ext).join(',');
 const OfflineContext=window.OfflineAudioContext||window.webkitOfflineAudioContext;
 const isSupported=!!(OfflineContext&&window.Worker&&window.Blob&&window.File);
 const svgPaths={up:'M12 19V5m-6 6 6-6 6 6',down:'M12 5v14m-6-6 6 6 6-6',remove:'m6 6 12 12M6 18 18 6'};
@@ -416,42 +460,85 @@ function addFiles(files){
   if(busy||!isSupported)return;
   const rejected=[];let added=0;
   for(const file of Array.from(files)){
-    if(!file.size||(!file.type.startsWith('audio/')&&!/\.(m4a|mp4|aac|mp3|wav|aiff?|caf|flac|ogg|webm)$/i.test(file.name))){rejected.push(file.name);continue;}
+    if(!isMedia(file)){rejected.push(file.name);continue;}
     // Append synchronously; metadata completion never changes the queue order.
     const clip={id:nextId++,file,url:URL.createObjectURL(file),duration:null,probe:null,player:null};clips.push(clip);added++;
     const probe=new Audio();clip.probe=probe;probe.preload='metadata';
     const complete=()=>{if(Number.isFinite(probe.duration))clip.duration=probe.duration;probe.onloadedmetadata=null;probe.onerror=null;probe.removeAttribute('src');probe.load();clip.probe=null;summary();const row=document.querySelector('[data-id="'+clip.id+'"] .clip-meta');if(row)row.textContent=size(file.size)+(Number.isFinite(clip.duration)?' · '+duration(clip.duration):'');};
     probe.onloadedmetadata=complete;probe.onerror=complete;probe.src=clip.url;
   }
-  if(added)discardOutput();fail(rejected.length?'These files were not added because they are empty or not a supported audio file: '+rejected.join(', '):'');render();
+  if(added)discardOutput();fail(rejected.length?'These files were not added because they are empty or not a recognized audio or video file: '+rejected.join(', '):'');render();
 }
-function workerClient(){
-  const source=$('encoder-source').textContent+'\n'+$('worker-source').textContent;
+function workerClient(kind='encoder'){
+  const source=kind==='decoder'?$('decoder-source').textContent:$('encoder-source').textContent+'\n'+$('worker-source').textContent;
+  const label=kind==='decoder'?'media decoder':'MP3 encoder';
   const url=URL.createObjectURL(new Blob([source],{type:'text/javascript'}));
-  let worker;try{worker=new Worker(url);}catch(error){URL.revokeObjectURL(url);throw new Error('This browser could not start the MP3 encoder. Open the page in Safari or another full browser.');}
+  let worker;try{worker=new Worker(url);}catch(error){URL.revokeObjectURL(url);throw new Error('This browser could not start the '+label+'. Open the page in Safari or another full browser.');}
   let serial=0,dead=false;const pending=new Map();
   function rejectAll(error){for(const p of pending.values()){clearTimeout(p.timer);p.reject(error);}pending.clear();}
   worker.onmessage=e=>{const p=pending.get(e.data.id);if(!p)return;pending.delete(e.data.id);clearTimeout(p.timer);e.data.error?p.reject(new Error(e.data.error)):p.resolve(e.data);};
-  worker.onerror=e=>{dead=true;rejectAll(new Error(e.message||'The MP3 encoder stopped. Try fewer or shorter clips.'));};
-  return {request(type,payload={},transfer=[]){if(dead)return Promise.reject(new Error('The MP3 encoder is unavailable.'));return new Promise((resolve,reject)=>{const id=++serial;const timer=setTimeout(()=>{pending.delete(id);reject(new Error('The MP3 encoder stopped responding. Keep the page open and try again.'));},120000);pending.set(id,{resolve,reject,timer});try{worker.postMessage({id,type,...payload},transfer);}catch(error){pending.delete(id);clearTimeout(timer);reject(error);}});},stop(){dead=true;worker.terminate();URL.revokeObjectURL(url);rejectAll(new DOMException('Export canceled','AbortError'));}};
+  worker.onerror=e=>{dead=true;rejectAll(new Error(e.message||'The '+label+' stopped. Try fewer or shorter clips.'));};
+  return {request(type,payload={},transfer=[]){if(dead)return Promise.reject(new Error('The '+label+' is unavailable.'));return new Promise((resolve,reject)=>{const id=++serial;const timer=setTimeout(()=>{pending.delete(id);reject(new Error('The '+label+' stopped responding. Try a shorter clip.'));},type==='decode'?600000:120000);pending.set(id,{resolve,reject,timer});try{worker.postMessage({id,type,...payload},transfer);}catch(error){pending.delete(id);clearTimeout(timer);reject(error);}});},stop(){dead=true;worker.terminate();URL.revokeObjectURL(url);rejectAll(new DOMException('Export canceled','AbortError'));}};
 }
 function checkCanceled(job){if(job.canceled)throw new DOMException('Export canceled','AbortError');}
 function updateProgress(value,label){$('progress').value=value;$('percent').textContent=Math.floor(value)+'%';if(label)$('progressLabel').textContent=label;}
-function outputFilename(){return ($('outputName').value.trim().replace(/\.mp3$/i,'').replace(/[<>:"/\\|?*\u0000-\u001f]/g,'_').replace(/[. ]+$/g,'')||'Combined voice memos')+'.mp3';}
+function outputFilename(){return ($('outputName').value.trim().replace(/\.mp3$/i,'').replace(/[<>:"/\\|?*\u0000-\u001f]/g,'_').replace(/[. ]+$/g,'')||'Combined audio')+'.mp3';}
 async function decodeClip(clip,job){
-  let raw=await clip.file.arrayBuffer();checkCanceled(job);
   const decoder=new OfflineContext(2,1,SAMPLE_RATE);
   let buffer;
-  try{buffer=await decoder.decodeAudioData(raw);}catch(error){throw new Error('Could not decode "'+clip.file.name+'". Try this page in Safari for an iPhone M4A, or export that recording again. A very long clip may exceed your device’s memory.');}finally{raw=null;}
+  if(!isVideo(clip.file)) {
+    let raw=await clip.file.arrayBuffer();checkCanceled(job);
+    try{buffer=await decoder.decodeAudioData(raw);}catch(_){}finally{raw=null;}
+  }
+  checkCanceled(job);
+  if(!buffer) {
+    try {
+      await loadMediaDecoder(job);checkCanceled(job);
+      updateProgress($('progress').value,'Extracting audio from '+clip.file.name+'…');
+      let {pcm}=await job.decoder.request('decode',{file:clip.file});checkCanceled(job);
+      const frames=pcm.byteLength/8;
+      if(!frames||!Number.isInteger(frames))throw new Error('This file has no readable audio.');
+      buffer=decoder.createBuffer(2,frames,SAMPLE_RATE);
+      const view=new DataView(pcm.buffer,pcm.byteOffset,pcm.byteLength),left=buffer.getChannelData(0),right=buffer.getChannelData(1);
+      for(let i=0;i<frames;i++){left[i]=view.getFloat32(i*8,true);right[i]=view.getFloat32(i*8+4,true);}
+      pcm=null;
+    } catch(error) {
+      checkCanceled(job);
+      throw new Error('"'+clip.file.name+'": '+(error.message||'Could not extract the audio. Try a shorter clip.'));
+    }
+  }
   checkCanceled(job);
   if(!buffer.length)throw new Error('"'+clip.file.name+'" has no readable audio.');
   if(buffer.numberOfChannels>2||buffer.sampleRate!==SAMPLE_RATE){const mixer=new OfflineContext(2,Math.ceil(buffer.duration*SAMPLE_RATE),SAMPLE_RATE);const source=mixer.createBufferSource();source.buffer=buffer;source.connect(mixer.destination);source.start();buffer=await mixer.startRendering();checkCanceled(job);}
   return buffer;
 }
+async function loadMediaDecoder(job){
+  if(job.decoder)return;
+  if(!window.WebAssembly)throw new Error('This format needs WebAssembly. Open the page in a current Safari, Chrome, Firefox, or Edge browser.');
+  updateProgress($('progress').value,'Loading extra format support, about 31 MB…');
+  const base='https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.10/dist/umd/';
+  const controller=new AbortController();job.assetController=controller;
+  const timer=setTimeout(()=>controller.abort(),120000);
+  try {
+    const blobs=await Promise.all(['ffmpeg-core.js','ffmpeg-core.wasm'].map(async name=>{
+      const response=await fetch(base+name,{signal:controller.signal});
+      if(!response.ok)throw new Error('Decoder download failed.');
+      return new Blob([await response.arrayBuffer()],{type:name.endsWith('.js')?'text/javascript':'application/wasm'});
+    }));
+    checkCanceled(job);
+    job.coreURLs=blobs.map(blob=>URL.createObjectURL(blob));
+  } catch(error) {
+    controller.abort();checkCanceled(job);
+    throw new Error('Could not load extra format support. Check your internet connection and try exporting again.');
+  } finally {clearTimeout(timer);job.assetController=null;}
+  job.decoder=workerClient('decoder');
+  await job.decoder.request('init',{coreURL:job.coreURLs[0],wasmURL:job.coreURLs[1]});
+  checkCanceled(job);
+}
 async function exportMP3(){
   if(busy||!clips.length||!isSupported)return;
   fail('');discardOutput();setBusy(true);$('progressArea').hidden=false;$('cancelButton').disabled=false;updateProgress(0,'Preparing your clips…');
-  const job={canceled:false,client:null};run=job;const filename=outputFilename();let wake=null;let completed=false;const selected=clips.slice();
+  const job={canceled:false,client:null,decoder:null,coreURLs:[],assetController:null};run=job;const filename=outputFilename();let wake=null;let completed=false;const selected=clips.slice();
   if(navigator.wakeLock)navigator.wakeLock.request('screen').then(lock=>{if(run!==job||job.canceled)lock.release().catch(()=>{});else wake=lock;}).catch(()=>{});
   try{
     job.client=workerClient();await job.client.request('init');
@@ -480,13 +567,13 @@ async function exportMP3(){
     $('shareButton').hidden=!canShare;$('saveHint').textContent=canShare?'On iPhone, tap Share / Save to Files, then choose Save to Files.':'Tap Download MP3 to save. If your browser opens the audio, use its Share menu to save the file.';
     $('result').hidden=false;updateProgress(100,'Your MP3 is ready.');completed=true;
   }catch(error){if(job.canceled||error.name==='AbortError'){updateProgress(0,'Export canceled. Your clips are still here.');}else{fail(error.message||'Export failed. Try fewer or shorter clips.');updateProgress(0,'Export could not finish.');}}
-  finally{if(job.client)job.client.stop();run=null;if(wake)wake.release().catch(()=>{});setBusy(false);$('progressArea').hidden=true;if(completed)$('resultHeading').focus();}
+  finally{if(job.client)job.client.stop();if(job.decoder)job.decoder.stop();if(job.assetController)job.assetController.abort();job.coreURLs.forEach(url=>URL.revokeObjectURL(url));run=null;if(wake)wake.release().catch(()=>{});setBusy(false);$('progressArea').hidden=true;if(completed)$('resultHeading').focus();}
 }
 $('addButton').onclick=()=>$('fileInput').click();
 $('fileInput').onchange=e=>{addFiles(e.target.files);e.target.value='';};
 $('clearButton').onclick=()=>{if(busy)return;clips.forEach(cleanup);clips.length=0;discardOutput();fail('');render();};
 $('exportButton').onclick=exportMP3;
-$('cancelButton').onclick=()=>{if(!run)return;run.canceled=true;if(run.client)run.client.stop();$('cancelButton').disabled=true;$('progressLabel').textContent='Canceling…';};
+$('cancelButton').onclick=()=>{if(!run)return;run.canceled=true;if(run.assetController)run.assetController.abort();if(run.decoder)run.decoder.stop();if(run.client)run.client.stop();$('cancelButton').disabled=true;$('progressLabel').textContent='Canceling…';};
 $('shareButton').onclick=async()=>{if(!output)return;try{await navigator.share({files:[output.file]});}catch(error){if(error.name!=='AbortError')fail('Sharing was unavailable. Use Download MP3 instead.');}};
 $('outputName').oninput=discardOutput;
 let dragDepth=0;
@@ -498,7 +585,7 @@ setBusy(false);
 // WebMCP uses the same in-memory queue and export action as the visible controls.
 if(document.modelContext?.registerTool){
   const lifecycle=new AbortController();window.addEventListener('pagehide',()=>lifecycle.abort(),{once:true});
-  const tools=[{name:'read_clip_queue',title:'Read clip order',description:'Read the selected audio clips in their current export order. Does not access other device files.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true,untrustedContentHint:true},execute(){return {busy,clips:clips.map((c,i)=>({position:i+1,name:c.file.name,bytes:c.file.size})),mp3Ready:!!output};}},{name:'export_joined_mp3',title:'Join clips into MP3',description:'Convert all clips already selected by the user, in the visible order, to one MP3 and show its save buttons. Does not download or share the file.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},async execute(input){if(input&&Object.keys(input).length)throw new Error('No input fields are accepted.');if(busy)throw new Error('An export is already running.');if(!clips.length)throw new Error('Select audio clips first.');await exportMP3();if(!output)throw new Error('The export did not finish. Check the page for details.');return {ready:true,name:output.file.name,bytes:output.blob.size};}}];
+  const tools=[{name:'read_clip_queue',title:'Read clip order',description:'Read the selected audio and video clips in their current export order. Does not access other device files.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true,untrustedContentHint:true},execute(){return {busy,clips:clips.map((c,i)=>({position:i+1,name:c.file.name,bytes:c.file.size})),mp3Ready:!!output};}},{name:'export_joined_mp3',title:'Join clips into MP3',description:'Convert all clips already selected by the user, in the visible order, to one MP3 and show its save buttons. Does not download or share the file.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},async execute(input){if(input&&Object.keys(input).length)throw new Error('No input fields are accepted.');if(busy)throw new Error('An export is already running.');if(!clips.length)throw new Error('Select audio or video clips first.');await exportMP3();if(!output)throw new Error('The export did not finish. Check the page for details.');return {ready:true,name:output.file.name,bytes:output.blob.size};}}];
   for(const tool of tools){try{Promise.resolve(document.modelContext.registerTool(tool,{signal:lifecycle.signal})).catch(()=>{});}catch(_){}}
 }
 })();
