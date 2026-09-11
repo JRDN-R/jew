@@ -10,11 +10,33 @@
 :root{color-scheme:dark;--bg:#10131c;--surface:#191e2a;--well:#121722;--line:#303847;--ink:#f4f6fa;--muted:#b2bacb;--accent:#ff735f;--focus:#ffd2c7;--success:#a9e3c4;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);line-height:1.5}button,input,a{-webkit-tap-highlight-color:transparent}button,input{font:inherit}button,.button{border:1px solid var(--line);border-radius:12px;background:#252d3c;color:var(--ink);padding:12px 18px;min-height:48px;cursor:pointer;font-weight:650;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:9px;line-height:1.3}button:hover:not(:disabled),.button:hover{background:#303b4e}button:disabled{opacity:.45;cursor:not-allowed}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:4px}.primary{background:var(--accent);border-color:var(--accent);color:#201310}.primary:hover:not(:disabled){background:#ff9382}.quiet{background:transparent;border-color:transparent;color:var(--muted);font-weight:500;padding:10px}.icon{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.app{max-width:1060px;padding:44px 28px max(32px,env(safe-area-inset-bottom));margin:auto}.masthead{display:flex;align-items:center;gap:15px;margin-bottom:34px}.mark{width:49px;height:49px;background:#382523;color:var(--accent);border-radius:15px;display:grid;place-items:center}.mark svg{width:28px;height:28px}h1{font-size:clamp(1.65rem,4vw,2.1rem);line-height:1.2;letter-spacing:-.045em;margin:0}h2{font-size:1.13rem;letter-spacing:-.02em;margin:0}p{margin:8px 0;color:var(--muted)}.subhead{margin:7px 0 0;font-size:.94rem}.format{margin-left:auto;white-space:nowrap;color:var(--muted);font-size:.875rem;letter-spacing:.06em}.layout{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:24px;align-items:start}.panel{background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden}.panel-head{padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:10px}.count{font-size:.875rem;color:var(--muted);margin-top:4px}.drop{margin:0 20px 20px;padding:28px 20px;border:1px dashed #536079;border-radius:14px;background:var(--well);text-align:center;transition:background .15s,border-color .15s}.drop.dragging{background:#3a2629;border-color:var(--accent)}.drop p{font-size:.875rem;margin:12px 0 0}.drop .primary{padding:14px 25px}.empty{text-align:center;padding:22px 24px 38px}.empty strong{font-size:1rem;font-weight:550}.empty p{font-size:.875rem;max-width:310px;margin:8px auto 0}.clips{list-style:none;padding:0 20px;margin:0 0 16px}.clip{position:relative;display:grid;grid-template-columns:36px minmax(0,1fr);gap:12px;padding:18px 0;border-top:1px solid var(--line)}.number{align-self:start;width:32px;height:32px;border-radius:50%;background:#2e3545;display:grid;place-items:center;font-size:.875rem;font-variant-numeric:tabular-nums}.clip.processing .number{background:var(--accent);color:#201310}.clip-name{margin:2px 0 2px;font-size:1rem;font-weight:550;overflow-wrap:anywhere}.clip-meta{color:var(--muted);font-size:.875rem;font-variant-numeric:tabular-nums}.clip-tools{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:9px}.clip-tools button{min-width:44px;min-height:44px;padding:9px}.clip-tools .remove{margin-left:auto;color:#ffc2b9}.clip-tools .preview{font-size:.875rem;font-weight:500;padding:9px 11px}.clip audio{width:100%;margin-top:12px;display:block;height:42px}.order-note{padding:0 24px 22px;font-size:.875rem;margin:0}.export{padding:24px;position:sticky;top:24px}.eyebrow{font-size:.75rem;color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-weight:700;margin-bottom:8px}.export label{display:block;font-size:.875rem;font-weight:550;margin:24px 0 8px}.filename{display:flex;align-items:center;border:1px solid #49536a;border-radius:10px;background:var(--well);padding-right:12px}.filename input{width:100%;min-width:0;border:0;border-radius:10px;background:transparent;color:var(--ink);padding:12px;font-size:1rem}.filename span{color:var(--muted);font-size:.875rem}.settings{display:flex;justify-content:space-between;font-size:.875rem;margin:19px 0;color:var(--muted)}#exportButton{width:100%}.privacy{display:flex;align-items:center;gap:7px;font-size:.8rem;margin-top:17px}.privacy svg{width:16px;height:16px}.progress-area{margin-top:20px;border-top:1px solid var(--line);padding-top:19px}.progress-label{font-size:.875rem;margin:0 0 10px;color:var(--ink);overflow-wrap:anywhere}progress{display:block;width:100%;height:8px;border:0;border-radius:8px;overflow:hidden;background:#303847}progress::-webkit-progress-bar{background:#303847}progress::-webkit-progress-value{background:var(--accent);border-radius:8px}progress::-moz-progress-bar{background:var(--accent)}.progress-bottom{display:flex;align-items:center;justify-content:space-between;font-size:.8rem;color:var(--muted);gap:8px;margin-top:7px}.keep-open{font-size:.8rem;margin:6px 0 0}.error{margin:0 0 20px;padding:14px 17px;border:1px solid #895044;background:#372222;border-radius:12px;color:#ffd0c7;overflow-wrap:anywhere;font-size:.94rem}.result{margin-top:24px;padding:22px 24px;background:#182b27;border:1px solid #395b50;border-radius:16px}.result h2{color:var(--success)}.result p{font-size:.875rem;overflow-wrap:anywhere}.result audio{display:block;width:100%;margin:18px 0}.result-buttons{display:flex;gap:10px;flex-wrap:wrap}.result-buttons .button{background:#b9ecd3;color:#11291e;border-color:#b9ecd3}.result-buttons button{background:transparent}.help{margin-top:30px;color:var(--muted);font-size:.875rem}.help summary{cursor:pointer;color:var(--ink);padding:9px 0;min-height:44px}.help ol{padding-left:21px;max-width:740px}.help li{margin:9px 0}.help a{color:var(--muted)}.footer{font-size:.8rem;color:var(--muted);margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}.footer a{color:inherit}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}@media(max-width:760px){.app{padding:28px 18px max(28px,env(safe-area-inset-bottom))}.masthead{margin-bottom:26px;gap:12px}.format{display:none}.layout{grid-template-columns:1fr;gap:18px}.export{position:static}.panel-head{padding:18px 20px}.drop{padding:24px 15px}.result{margin-top:18px;padding:20px}.subhead{font-size:.875rem}.help{margin-top:22px}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
 
 .transcribe-settings{margin-top:24px;padding-top:22px;border-top:1px solid var(--line)}.transcribe-settings p{font-size:.875rem}.transcribe-settings .api-key{display:block;width:100%;min-width:0;background:var(--well);border:1px solid #49536a;border-radius:10px;color:var(--ink);padding:12px;font-size:1rem}.transcribe-settings label{margin-top:18px}.transcribe-settings .key-note{margin:8px 0 16px}.transcribe-settings a{color:var(--focus)}#transcribeButton{width:100%}.transcript-text{display:block;width:100%;min-height:240px;resize:vertical;margin:16px 0;background:var(--well);border:1px solid #49536a;border-radius:12px;padding:15px;color:var(--ink);font:inherit;line-height:1.6}.transcript-text:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.transcript-block{position:relative;isolation:isolate}
+.transcript-block .transcript-text{display:block;margin:0;width:100%;box-sizing:border-box}
+.transcript-waiting{position:absolute;inset:1px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:22px 16px;box-sizing:border-box;border-radius:11px;background:#fafbff;color:#35416c;text-align:center;pointer-events:none}
+.transcript-waiting[hidden]{display:none}
+.transcript-block.has-text .transcript-waiting{position:relative;inset:auto;flex-direction:row;gap:14px;margin-top:8px;padding:12px 16px;border:1px solid #e0e5f2;text-align:left}
+.transcript-block.has-text .waiting-dancer{width:48px;height:52px}
+.waiting-dancer{display:block;flex:none;overflow:visible}
+.waiting-copy{min-width:0}
+.waiting-message{margin:0 0 9px!important;font-size:14px;line-height:1.45;font-weight:600;color:#35416c;overflow-wrap:anywhere}
+.waiting-bar{font:600 14px/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre;color:#6871da;letter-spacing:.08em;font-variant-ligatures:none}
+.waiting-dancer-body{transform-origin:48px 75px;animation:jewWaitingDance .8s ease-in-out infinite}
+.waiting-arm-left{transform-origin:28px 46px;animation:jewWaitingWave .8s ease-in-out infinite alternate}
+.waiting-arm-right{transform-origin:68px 46px;animation:jewWaitingWave .8s ease-in-out -.4s infinite alternate-reverse}
+.waiting-foot-left{transform-origin:38px 67px;animation:jewWaitingStep .8s ease-in-out infinite alternate}
+.waiting-foot-right{transform-origin:57px 67px;animation:jewWaitingStep .8s ease-in-out -.4s infinite alternate-reverse}
+.waiting-dancer-shadow{transform-origin:48px 91px;animation:jewWaitingShadow .8s ease-in-out infinite}
+@keyframes jewWaitingDance{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-5px) rotate(6deg)}}
+@keyframes jewWaitingWave{from{transform:rotate(-13deg)}to{transform:rotate(15deg)}}
+@keyframes jewWaitingStep{from{transform:rotate(-7deg)}to{transform:rotate(12deg)}}
+@keyframes jewWaitingShadow{0%,100%{transform:scaleX(1);opacity:.8}50%{transform:scaleX(.75);opacity:.5}}
+@media(prefers-reduced-motion:reduce){.waiting-dancer-body,.waiting-arm-left,.waiting-arm-right,.waiting-foot-left,.waiting-foot-right,.waiting-dancer-shadow{animation:none}}
+
 </style>
 </head>
 <body>
 <main class="app">
-  <header class="masthead"><div class="mark" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="13" rx="4"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3M8 22h8"/></svg></div><div><h1>Just Encode Whatever</h1><p class="subhead">Private local edition · Version 1.2</p></div><span class="format">Audio / Video → MP3</span></header>
+  <header class="masthead"><div class="mark" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="13" rx="4"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3M8 22h8"/></svg></div><div><h1>Just Encode Whatever</h1><p class="subhead">Private local edition · Version 1.3</p></div><span class="format">Audio / Video → MP3</span></header>
   <noscript><p class="error">Open this page in a browser with JavaScript enabled to join your audio.</p></noscript>
   <p id="error" class="error" role="alert" hidden></p>
   <div class="layout">
@@ -25,11 +47,40 @@
       <ol id="clipList" class="clips" aria-label="Clips in export order"></ol>
       <p id="orderNote" class="order-note" hidden>New uploads sort by recording time. File time is used when that is missing. Use the arrows to adjust the order manually.</p>
     </section>
-    <section class="panel export" aria-labelledby="exportHeading"><div class="eyebrow">One finished recording</div><h2 id="exportHeading">Export MP3</h2><label for="outputName">File name</label><div class="filename"><input id="outputName" type="text" value="Combined audio" maxlength="120" autocomplete="off" spellcheck="false"><span>.mp3</span></div><div class="settings"><span>MP3 · Stereo</span><span>192 kbps</span></div><button id="exportButton" class="primary" disabled><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 15v5h14v-5"/></svg>Join &amp; export MP3</button><p class="privacy"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0v4"/></svg>MP3 export stays on your device.</p><div class="transcribe-settings"><h2>Transcribe audio</h2><p>Watch Gemini’s text appear as it arrives. Plain text in clip order, without timestamps or speaker labels.</p><button id="transcribeButton" disabled>Transcribe all · Live</button><p>Live transcription sends audio to Google at about playback speed. Keep this page open. Free-tier limits and your Google project’s billing settings apply. <a href="https://ai.google.dev/gemini-api/docs/pricing#gemini-3.5-transcribe-live" target="_blank" rel="noopener noreferrer">Pricing &amp; data use</a></p></div><div id="progressArea" class="progress-area" hidden><p id="progressLabel" class="progress-label" role="status">Preparing…</p><progress id="progress" value="0" max="100" aria-label="Processing progress"></progress><div class="progress-bottom"><span id="percent">0%</span><button id="cancelButton" class="quiet">Cancel</button></div><p class="keep-open">Keep this page open until processing finishes.</p></div></section>
+    <section class="panel export" aria-labelledby="exportHeading"><div class="eyebrow">One finished recording</div><h2 id="exportHeading">Export MP3</h2><label for="outputName">File name</label><div class="filename"><input id="outputName" type="text" value="Combined audio" maxlength="120" autocomplete="off" spellcheck="false"><span>.mp3</span></div><div class="settings"><span>MP3 · Stereo</span><span>192 kbps</span></div><button id="exportButton" class="primary" disabled><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 15v5h14v-5"/></svg>Join &amp; export MP3</button><p class="privacy"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0v4"/></svg>MP3 export stays on your device.</p><div class="transcribe-settings"><h2>Transcribe audio</h2><p>Gemini 3.5 Transcribe. Plain text in clip order, without timestamps or speaker labels.</p><button id="transcribeButton" disabled>Transcribe all</button><p>Transcription sends audio to Google. Finished text appears below as each section completes. Keep this page open. Free-tier limits and your Google project’s billing settings apply. <a href="https://ai.google.dev/gemini-api/docs/pricing#gemini-3.5-transcribe" target="_blank" rel="noopener noreferrer">Pricing &amp; data use</a></p></div><div id="progressArea" class="progress-area" hidden><p id="progressLabel" class="progress-label" role="status">Preparing…</p><progress id="progress" value="0" max="100" aria-label="Processing progress"></progress><div class="progress-bottom"><span id="percent">0%</span><button id="cancelButton" class="quiet">Cancel</button></div><p class="keep-open">Keep this page open until processing finishes.</p></div></section>
   </div>
   <section id="result" class="result" aria-labelledby="resultHeading" hidden><h2 id="resultHeading" tabindex="-1">Your MP3 is ready</h2><p id="resultInfo"></p><audio id="resultPlayer" controls preload="metadata" aria-label="Play combined MP3"></audio><div class="result-buttons"><a id="downloadLink" class="button" download>Download MP3</a><button id="shareButton" hidden>Share / Save to Files</button></div><p id="saveHint">On iPhone, use Share / Save to Files, then choose Save to Files.</p></section>
-  <section id="transcriptResult" class="result" aria-labelledby="transcriptHeading" hidden><h2 id="transcriptHeading" tabindex="-1">Your transcript</h2><p id="transcriptInfo" role="status"></p><p id="transcriptError" class="error" role="alert" hidden></p><textarea id="transcriptText" class="transcript-text" readonly aria-label="Plain-text transcript"></textarea><div class="result-buttons"><button id="copyTranscript" disabled>Copy text</button><button id="shareTranscript" hidden>Share / Messages</button><a id="downloadTranscript" class="button" download hidden>Download TXT</a></div><p id="copyStatus" role="status"></p></section>
-  <details class="help"><summary>Using this local page</summary><p>Open this HTML file in a full browser. Internet access is needed for Gemini transcription and the media decoder download. Your clips stay in this tab until you close or reload it.</p><ol><li>In Voice Memos, select your recordings, tap Share, then <strong>Save to Files</strong>.</li><li>Open this page in Safari, tap <strong>Add audio or video</strong>, and select your exported recordings.</li><li>Check the numbered order, then tap <strong>Join &amp; export MP3</strong>. Save the finished file using the buttons above.</li></ol><p>Uploads are sorted by their embedded recording time, including the time of day. If it is missing, the file’s modification time is used and labeled File time. Files with no usable date keep their upload order at the end. Editing or exporting a file can change its date. New uploads sort the queue again; use the arrows afterward for a manual adjustment.</p><p>Common audio formats include MP3, M4A, AAC, WAV, AIFF, FLAC, OGG, Opus, WMA, and CAF. You can also add MOV, MP4, MKV, WebM, AVI, and other common videos. The first audio track from each video is used; videos without audio cannot be exported.</p><p>Reading recording dates and converting some formats needs an extra decoder, downloaded when first needed, about 31 MB. MP3 conversion is processed on this device. Protected files and some codecs cannot be converted. Large files need more memory. Keep this page open; reloading clears your clips.</p><p>Live text comes directly from Gemini. If the live connection cannot finish, this page tries Google’s file transcription for that section; its final text replaces that section’s preview. Key or quota errors stop immediately and display the reason here. Draft words may change as Google finalizes them. Copy text, Share / Messages, and Download TXT use the text shown, with a blank line between clips. On iOS, Share / Messages opens the share sheet when supported; choose Messages there. Preview playback depends on your browser. A clip that cannot preview may still export.</p><p>Clips are placed directly back to back. Any silence already in a recording stays in it.</p></details>
+  <section id="transcriptResult" class="result" aria-labelledby="transcriptHeading" hidden><h2 id="transcriptHeading" tabindex="-1">Your transcript</h2><p id="transcriptInfo" role="status"></p><p id="transcriptError" class="error" role="alert" hidden></p><div id="transcriptBlock" class="transcript-block">
+  <textarea id="transcriptText" class="transcript-text" readonly aria-label="Plain-text transcript"></textarea>
+  <div id="transcriptWaiting" class="transcript-waiting" hidden>
+    <svg class="waiting-dancer" viewBox="0 0 96 100" width="76" height="80" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="jewWaitingPurple" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0" stop-color="#8d79fa"/>
+          <stop offset="1" stop-color="#596de8"/>
+        </linearGradient>
+      </defs>
+      <ellipse class="waiting-dancer-shadow" cx="48" cy="91" rx="20" ry="3" fill="#dce2f6"/>
+      <g class="waiting-dancer-body">
+        <path class="waiting-arm-left" d="M28 46 Q15 44 13 31" fill="none" stroke="#8d79fa" stroke-width="7" stroke-linecap="round"/>
+        <path class="waiting-arm-right" d="M68 46 Q80 39 83 27" fill="none" stroke="#6670ed" stroke-width="7" stroke-linecap="round"/>
+        <path class="waiting-foot-left" d="M38 67 L34 83 L25 83" fill="none" stroke="#5965cc" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="waiting-foot-right" d="M57 67 L63 83 L72 83" fill="none" stroke="#5965cc" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="25" y="16" width="46" height="57" rx="22" fill="url(#jewWaitingPurple)"/>
+        <path d="M33 28 Q39 21 48 23" fill="none" stroke="#bcb3ff" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="39" cy="40" r="3" fill="#fff"/>
+        <circle cx="57" cy="40" r="3" fill="#fff"/>
+        <path d="M40 51 Q48 59 56 51" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+      </g>
+    </svg>
+    <div class="waiting-copy">
+      <p id="waitingMessage" class="waiting-message" role="status" aria-live="polite" aria-atomic="true">Preparing your audio…</p>
+      <div id="waitingBar" class="waiting-bar" aria-hidden="true">[====            ]</div>
+    </div>
+  </div>
+</div>
+<div class="result-buttons"><button id="copyTranscript" disabled>Copy text</button><button id="shareTranscript" hidden>Share / Messages</button><a id="downloadTranscript" class="button" download hidden>Download TXT</a></div><p id="copyStatus" role="status"></p></section>
+  <details class="help"><summary>Using this local page</summary><p>Open this HTML file in a full browser. Internet access is needed for Gemini transcription and the media decoder download. Your clips stay in this tab until you close or reload it.</p><ol><li>In Voice Memos, select your recordings, tap Share, then <strong>Save to Files</strong>.</li><li>Open this page in Safari, tap <strong>Add audio or video</strong>, and select your exported recordings.</li><li>Check the numbered order, then tap <strong>Join &amp; export MP3</strong>. Save the finished file using the buttons above.</li></ol><p>Uploads are sorted by their embedded recording time, including the time of day. If it is missing, the file’s modification time is used and labeled File time. Files with no usable date keep their upload order at the end. Editing or exporting a file can change its date. New uploads sort the queue again; use the arrows afterward for a manual adjustment.</p><p>Common audio formats include MP3, M4A, AAC, WAV, AIFF, FLAC, OGG, Opus, WMA, and CAF. You can also add MOV, MP4, MKV, WebM, AVI, and other common videos. The first audio track from each video is used; videos without audio cannot be exported.</p><p>Reading recording dates and converting some formats needs an extra decoder, downloaded when first needed, about 31 MB. MP3 conversion is processed on this device. Protected files and some codecs cannot be converted. Large files need more memory. Keep this page open; reloading clears your clips.</p><p>Transcription uses Gemini 3.5 Transcribe. Long recordings are processed in sections, and completed text appears in recording order. Copy text, Share / Messages, and Download TXT use the text shown, with a blank line between clips. On iOS, Share / Messages opens the share sheet when supported; choose Messages there. Preview playback depends on your browser. A clip that cannot preview may still export.</p><p>Clips are placed directly back to back. Any silence already in a recording stays in it.</p></details>
   <footer class="footer"><span>Just Encode Whatever</span><a href="https://github.com/zhuker/lamejs" target="_blank" rel="noopener noreferrer">MP3 encoder: lamejs · LGPL</a><a href="https://lame.sourceforge.net" target="_blank" rel="noopener noreferrer">LAME</a><a href="https://github.com/ffmpegwasm/ffmpeg.wasm" target="_blank" rel="noopener noreferrer">Media decoder: FFmpeg.wasm</a></footer>
 </main>
 <script id="encoder-source" type="text/plain">/* lamejs, unchanged upstream source. https://github.com/zhuker/lamejs
@@ -460,9 +511,10 @@ window.JEWCredential = (() => {
 })();
 </script>
 <script id="transcription-source">
-// https://ai.google.dev/gemini-api/docs/live-api/live-transcribe
+
+// https://ai.google.dev/gemini-api/docs/transcribe
 window.JEWTranscription = (() => {
-  const RATE=16000, MAX_SAMPLES=RATE*300, FRAME_SAMPLES=RATE/10;
+  const RATE=16000, MAX_SAMPLES=RATE*300;
   const abort=()=>new DOMException('Transcription canceled','AbortError');
   function check(signal){if(signal?.aborted)throw abort();}
   function chunkEnd(samples,start){
@@ -545,130 +597,24 @@ window.JEWTranscription = (() => {
     return parts.filter(text=>text.length).reduce((left,right)=>left+(
       left&&!/\s$/.test(left)&&!/^\s|^[.,!?;:…)}\]]/.test(right)?' ':'')+right,'');
   }
-  async function request(samples,key,signal,onUpdate=()=>{}){
-    check(signal);
+  async function transcribe(samples,key,signal,onUpdate=()=>{}){
     if(!samples.length)throw new Error('There is no audio to transcribe.');
-    if(typeof WebSocket!=='function')throw new Error('This browser cannot stream transcription. Open the HTML in Safari, Chrome, or Edge.');
-    return new Promise((resolve,reject)=>{
-      let socket,settled=false,ready=false,endSent=false,sent=0,preview='',messages=Promise.resolve();
-      let generationDone=false,finalAfterEnd=false,closeError=null;
-      const committed=[],timers=new Set();
-      let setupTimer,sendTimer,drainTimer,quietTimer,connectionErrorTimer,stalledAt=null;
-      const later=(fn,ms)=>{const id=setTimeout(()=>{timers.delete(id);if(!settled)fn();},ms);timers.add(id);return id;};
-      const cancelTimer=id=>{clearTimeout(id);timers.delete(id);};
-      const snapshot=()=>joinText([...committed,preview]);
-      const update=()=>onUpdate(snapshot(),Math.min(0.99,sent/samples.length),{provisional:!!preview,finalizing:endSent});
-      function finish(error){
-        if(settled)return;settled=true;
-        if(error&&error.name!=='AbortError'&&closeError?.recoverable===false)error=closeError;
-        timers.forEach(clearTimeout);timers.clear();signal?.removeEventListener('abort',cancel);
-        if(socket){socket.onopen=null;socket.onmessage=null;socket.onerror=null;socket.onclose=null;try{socket.close(1000,'Finished');}catch(_){}}
-        if(error)reject(error);else{const text=joinText(committed);onUpdate(text,1,{provisional:false,finalizing:false});resolve(text);}
-      }
-      const cancel=()=>finish(abort());
-      signal?.addEventListener('abort',cancel,{once:true});
-      function send(data){socket.send(JSON.stringify(data));}
-      function checkCompletion(){
-        cancelTimer(quietTimer);
-        // This model currently emits a final transcript plus generationComplete,
-        // often without Transcription.finished. With one manually delimited
-        // activity per session, wait for both and drain late text before closing.
-        if(endSent&&generationDone&&finalAfterEnd&&!preview)quietTimer=later(()=>finish(),2000);
-      }
-      function pump(){
-        if(settled)return;
-        try{
-          check(signal);
-          if(socket.bufferedAmount>262144){
-            if(stalledAt===null)stalledAt=Date.now();
-            if(Date.now()-stalledAt>30000)throw new Error('The upload connection stalled. Any text received is kept below.');
-            sendTimer=later(pump,100);return;
-          }
-          stalledAt=null;
-          if(sent<samples.length){
-            const end=Math.min(sent+FRAME_SAMPLES,samples.length);
-            send({realtimeInput:{audio:{data:base64(pcm(samples.subarray(sent,end))),mimeType:'audio/pcm;rate=16000'}}});
-            const delay=(end-sent)/RATE*1000;sent=end;update();sendTimer=later(pump,delay);
-          }else{
-            endSent=true;send({realtimeInput:{activityEnd:{}}});update();
-            drainTimer=later(()=>finish(new Error('Google did not confirm the final transcript. Any text received is kept below; the result may be incomplete.')),60000);
-          }
-        }catch(error){finish(error);}
-      }
-      async function receive(event){
-        if(settled)return;
-        let raw=event.data;
-        if(typeof raw!=='string')raw=typeof raw.text==='function'?await raw.text():new TextDecoder().decode(raw);
-        if(settled)return;
-        let data;try{data=JSON.parse(raw);}catch(_){throw new Error('Google sent an unreadable response. Any text received is kept below.');}
-        if(data.error){
-          const code=data.error.code,status=data.error.status;
-          throw apiError(code,data.error.message||status,key);
-        }
-        if(data.setupComplete&&!ready){ready=true;cancelTimer(setupTimer);send({realtimeInput:{activityStart:{}}});pump();}
-        const content=data.serverContent;
-        if(content){
-          if(typeof content.interimInputTranscription?.text==='string'){preview=content.interimInputTranscription.text;cancelTimer(quietTimer);}
-          if(content.inputTranscription){
-            const final=content.inputTranscription;
-            if(typeof final.text==='string'&&final.text)committed.push(final.text);
-            preview='';
-            if(endSent)finalAfterEnd=true;
-            update();
-            // Input transcription has its own completion marker. A model turn
-            // can complete before transcription arrives, so do not close on it.
-            if(endSent&&final.finished===true){finish();return;}
-          }else if(content.interimInputTranscription)update();
-          if(content.generationComplete&&endSent)generationDone=true;
-          checkCompletion();
-        }
-        if(data.goAway)finish(new Error('Google ended the streaming session. Any text received is kept below. Try again with shorter clips.'));
-      }
-      try{
-        socket=new WebSocket('wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContent?key='+encodeURIComponent(key));
-        socket.binaryType='arraybuffer';
-        socket.onopen=()=>{
-          try{send({setup:{model:'models/gemini-3.5-transcribe-live',generationConfig:{responseModalities:['TEXT']},
-            inputAudioTranscription:{mode:'VERBATIM',languageCodes:[]},
-            realtimeInputConfig:{automaticActivityDetection:{disabled:true}}}});}catch(error){finish(error);}
-        };
-        socket.onmessage=event=>{messages=messages.then(()=>receive(event)).catch(error=>finish(error));};
-        socket.onerror=()=>{connectionErrorTimer=later(()=>{messages=messages.then(()=>finish(new Error('Could not connect to Google Live transcription.')));},500);};
-        socket.onclose=event=>{
-          cancelTimer(connectionErrorTimer);
-          closeError=apiError(event.code,'Live connection closed ('+event.code+'). '+(event.reason||'The connection ended before the transcript was confirmed.'),key);
-          messages=messages.then(()=>finish(closeError));
-        };
-        setupTimer=later(()=>finish(new Error('Google did not open the transcription session. Check your connection and API access.')),20000);
-        later(()=>finish(new Error('The streaming session timed out. Any text received is kept below.')),540000);
-        if(signal?.aborted)cancel();
-      }catch(_){finish(new Error('This browser could not open a connection to Google Live transcription.'));}
-    });
-  }
-  async function transcribe(samples,key,signal,onUpdate){
-    if(!samples.length)throw new Error('There is no audio to transcribe.');
-    const completed=[];let start=0;
+    const completed=[];let start=0,section=0;
     while(start<samples.length){
-      check(signal);const end=chunkEnd(samples,start);
-      let current='',text;
-      const publish=(value,fraction,state)=>{current=value;onUpdate(joinText([...completed,value]),(start+(end-start)*fraction)/samples.length,state);};
-      try{text=await request(samples.subarray(start,end),key,signal,publish);}
-      catch(error){
-        check(signal);if(error.name==='AbortError'||error.recoverable===false)throw error;
-        publish(current,0,{mode:'file',notice:'Live transcription could not finish. Transcribing this section as a file…',provisional:!!current});
-        try{text=await requestFile(samples.subarray(start,end),key,signal);}
-        catch(fileError){check(signal);throw fileError;}
-        check(signal);publish(text,1,{mode:'file',provisional:false});
-      }
+      check(signal);const end=chunkEnd(samples,start);section++;
+      onUpdate(joinText(completed),start/samples.length,{waiting:true,section});
+      const text=await requestFile(samples.subarray(start,end),key,signal);
       check(signal);completed.push(text);start=end;
+      onUpdate(joinText(completed),start/samples.length,{waiting:false,section});
     }
     return joinText(completed);
   }
-  return {RATE,MAX_SAMPLES,chunkEnd,pcm,wav,joinText,request,requestFile,transcribe};
+  return {RATE,MAX_SAMPLES,chunkEnd,pcm,wav,joinText,requestFile,transcribe};
 })();
 
 </script>
 <script id="app-source">
+
 (() => {
 'use strict';
 const $=id=>document.getElementById(id);
@@ -691,7 +637,7 @@ function size(n){return n<1048576?(n/1024).toFixed(0)+' KB':(n/1048576).toFixed(
 function duration(s){s=Math.round(s);const h=Math.floor(s/3600),m=Math.floor(s%3600/60);return (h?h+':'+String(m).padStart(2,'0'):m)+':'+String(s%60).padStart(2,'0');}
 function fail(message){$('error').textContent=message;$('error').hidden=!message;}
 function discardOutput(){if(!output)return;$('resultPlayer').pause();$('resultPlayer').removeAttribute('src');$('resultPlayer').load();URL.revokeObjectURL(output.url);output=null;$('result').hidden=true;$('downloadLink').removeAttribute('href');}
-function discardTranscript(){if(transcriptURL)URL.revokeObjectURL(transcriptURL);transcriptURL=null;$('transcriptResult').hidden=true;$('transcriptText').value='';$('transcriptInfo').textContent='';$('transcriptError').textContent='';$('transcriptError').hidden=true;$('copyStatus').textContent='';$('copyTranscript').disabled=true;$('downloadTranscript').hidden=true;$('downloadTranscript').removeAttribute('href');}
+function discardTranscript(){stopTranscriptWaiting();if(transcriptURL)URL.revokeObjectURL(transcriptURL);transcriptURL=null;$('transcriptResult').hidden=true;$('transcriptText').value='';$('transcriptInfo').textContent='';$('transcriptError').textContent='';$('transcriptError').hidden=true;$('copyStatus').textContent='';$('copyTranscript').disabled=true;$('downloadTranscript').hidden=true;$('downloadTranscript').removeAttribute('href');}
 function invalidateResults(){discardOutput();discardTranscript();}
 function summary(){const total=clips.reduce((n,c)=>n+c.file.size,0);const known=clips.length&&clips.every(c=>Number.isFinite(c.duration));$('count').textContent=clips.length?clips.length+' clip'+(clips.length===1?'':'s')+' · '+size(total)+(known?' · '+duration(clips.reduce((n,c)=>n+c.duration,0)):''):'No clips added';}
 function clipMeta(clip){
@@ -859,6 +805,47 @@ async function exportMP3(){
   }catch(error){if(job.canceled||error.name==='AbortError'){updateProgress(0,'Export canceled. Your clips are still here.');}else{fail(error.message||'Export failed. Try fewer or shorter clips.');updateProgress(0,'Export could not finish.');}}
   finally{if(job.client)job.client.stop();if(job.decoder)job.decoder.stop();if(job.assetController)job.assetController.abort();job.coreURLs.forEach(url=>URL.revokeObjectURL(url));run=null;if(wake)wake.release().catch(()=>{});setBusy(false);$('progressArea').hidden=true;if(completed)$('resultHeading').focus();}
 }
+  // Loading UI is separate from transcriptText, so it never enters copied or exported text.
+  let transcriptWaitingTimer=null;
+  let transcriptWaitingPosition=0;
+  let transcriptWaitingDirection=1;
+  const transcriptWaitingWidth=16;
+  const transcriptWaitingSpan=4;
+  function paintTranscriptWaitingBar(){
+    $('waitingBar').textContent='['+' '.repeat(transcriptWaitingPosition)+'='.repeat(transcriptWaitingSpan)+' '.repeat(transcriptWaitingWidth-transcriptWaitingSpan-transcriptWaitingPosition)+']';
+  }
+  function syncTranscriptWaiting(){
+    $('transcriptBlock').classList.toggle('has-text',Boolean($('transcriptText').value.trim()));
+  }
+  function setTranscriptWaitingMessage(message){
+    $('waitingMessage').textContent=message||'Transcribing your audio…';
+    syncTranscriptWaiting();
+  }
+  function startTranscriptWaiting(message){
+    stopTranscriptWaiting();
+    transcriptWaitingPosition=0;
+    transcriptWaitingDirection=1;
+    paintTranscriptWaitingBar();
+    setTranscriptWaitingMessage(message);
+    $('transcriptWaiting').hidden=false;
+    $('transcriptText').setAttribute('aria-busy','true');
+    const reducedMotion=typeof window.matchMedia==='function'&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(!reducedMotion){
+      transcriptWaitingTimer=setInterval(()=>{
+        transcriptWaitingPosition+=transcriptWaitingDirection;
+        if(transcriptWaitingPosition===0||transcriptWaitingPosition===transcriptWaitingWidth-transcriptWaitingSpan)transcriptWaitingDirection*=-1;
+        paintTranscriptWaitingBar();
+      },110);
+    }
+  }
+  function stopTranscriptWaiting(){
+    if(transcriptWaitingTimer!==null)clearInterval(transcriptWaitingTimer);
+    transcriptWaitingTimer=null;
+    $('transcriptWaiting').hidden=true;
+    $('transcriptText').removeAttribute('aria-busy');
+    syncTranscriptWaiting();
+  }
+
 function prepareTranscriptDownload(){
   const text=$('transcriptText').value;
   if(transcriptURL)URL.revokeObjectURL(transcriptURL);transcriptURL=null;
@@ -870,13 +857,13 @@ function updateTranscript(parts,message){
   const box=$('transcriptText'),follow=box.scrollHeight-box.scrollTop-box.clientHeight<60;
   if(box.value!==text){box.value=text;if(follow)box.scrollTop=box.scrollHeight;}
   if($('transcriptInfo').textContent!==message)$('transcriptInfo').textContent=message;
-  $('transcriptResult').hidden=false;
+  $('transcriptResult').hidden=false;syncTranscriptWaiting();
   $('copyTranscript').disabled=!text;$('downloadTranscript').hidden=!text;$('shareTranscript').hidden=!text||!navigator.share;$('shareTranscript').disabled=busy;
 }
 async function transcribeAll(){
   if(busy||dateJob||!clips.length||!isSupported)return;
   let key=PRIVATE_GEMINI_API_KEY;
-  fail('');discardTranscript();setBusy(true);$('transcriptResult').hidden=false;$('transcriptInfo').textContent='Preparing audio for live transcription…';$('progressArea').hidden=false;$('cancelButton').disabled=false;
+  fail('');discardTranscript();setBusy(true);$('transcriptResult').hidden=false;$('transcriptInfo').textContent='Preparing audio for transcription…';startTranscriptWaiting('Preparing your audio…');$('progressArea').hidden=false;$('cancelButton').disabled=false;
   updateProgress(0,'Preparing audio for transcription…');
   const job={canceled:false,client:null,decoder:null,coreURLs:[],assetController:null,transcriptionController:new AbortController()};
   run=job;const selected=clips.slice(),parts=selected.map(()=>[]);let wake=null,done=0,finished=false;
@@ -884,18 +871,20 @@ async function transcribeAll(){
   try{
     for(let i=0;i<selected.length;i++){
       checkCanceled(job);const clip=selected[i],label='Clip '+(i+1)+' of '+selected.length;
-      updateProgress(i/selected.length*100,'Reading '+label.toLowerCase()+'…');
+      updateProgress(i/selected.length*100,'Reading '+label.toLowerCase()+'…');setTranscriptWaitingMessage('Reading '+label.toLowerCase()+'…');
       let buffer=await decodeClip(clip,job);checkCanceled(job);
       clip.duration=buffer.duration;summary();
       const rate=JEWTranscription.RATE;
       const mixer=new OfflineContext(1,Math.ceil(buffer.duration*rate),rate),source=mixer.createBufferSource();
       source.buffer=buffer;source.connect(mixer.destination);source.start();
       const mono=await mixer.startRendering();source.disconnect();source.buffer=null;buffer=null;checkCanceled(job);
-      updateProgress(i/selected.length*100,'Transcribing '+label.toLowerCase()+'…');
+      updateProgress(i/selected.length*100,'Transcribing '+label.toLowerCase()+'…');setTranscriptWaitingMessage('Transcribing '+label.toLowerCase()+'…');
       try{
         await JEWTranscription.transcribe(mono.getChannelData(0),key,job.transcriptionController.signal,(text,fraction,state={})=>{
-          parts[i]=[text];updateTranscript(parts,state.notice||((state.finalizing?'Finalizing ':'Streaming ')+label.toLowerCase()+(state.provisional?' · Latest words may update.':'…')));
-          updateProgress((i+fraction)/selected.length*100,state.mode==='file'?'Transcribing '+label.toLowerCase()+' as a file…':'Transcribing '+label.toLowerCase()+'…');
+          const message='Transcribing '+label.toLowerCase()+(state.section>1?' · Section '+state.section:'')+'…';
+          parts[i]=[text];updateTranscript(parts,message);
+          if(state.waiting)setTranscriptWaitingMessage(message);
+          updateProgress((i+fraction)/selected.length*100,message);
         });
       }catch(error){checkCanceled(job);throw new Error('"'+clip.file.name+'": '+error.message);}
       done++;
@@ -909,7 +898,7 @@ async function transcribeAll(){
     if(!canceled){const detail=error.message||'Transcription could not finish.';fail(detail);$('transcriptError').textContent=detail;$('transcriptError').hidden=false;}
     updateTranscript(parts,(canceled?'Canceled':done?'Transcription stopped':'Transcription stopped before the first clip finished')+' · '+done+' of '+selected.length+' clips completed. Any text received is kept below.');
   }finally{
-    job.transcriptionController.abort();if(job.decoder)job.decoder.stop();if(job.assetController)job.assetController.abort();
+    stopTranscriptWaiting();job.transcriptionController.abort();if(job.decoder)job.decoder.stop();if(job.assetController)job.assetController.abort();
     job.coreURLs.forEach(url=>URL.revokeObjectURL(url));key='';run=null;if(wake)wake.release().catch(()=>{});
     setBusy(false);prepareTranscriptDownload();$('shareTranscript').disabled=false;$('progressArea').hidden=true;$('transcriptHeading').focus();
   }
@@ -922,12 +911,12 @@ $('shareTranscript').onclick=async()=>{
   try{await navigator.share({text});$('copyStatus').textContent='';}
   catch(error){if(error.name!=='AbortError')$('copyStatus').textContent='Sharing was unavailable. Use Copy text or Download TXT.';}
 };
-window.addEventListener('pagehide',()=>{if(run?.transcriptionController){run.canceled=true;run.transcriptionController.abort();if(run.assetController)run.assetController.abort();if(run.decoder)run.decoder.stop();}});
+window.addEventListener('pagehide',()=>{stopTranscriptWaiting();if(run?.transcriptionController){run.canceled=true;run.transcriptionController.abort();if(run.assetController)run.assetController.abort();if(run.decoder)run.decoder.stop();}});
 $('addButton').onclick=()=>$('fileInput').click();
 $('fileInput').onchange=e=>{addFiles(e.target.files);e.target.value='';};
 $('clearButton').onclick=()=>{if(busy)return;if(dateJob){dateJob.canceled=true;if(dateJob.assetController)dateJob.assetController.abort();if(dateJob.decoder)dateJob.decoder.stop();}clips.forEach(cleanup);clips.length=0;invalidateResults();$('dateStatus').hidden=true;fail('');render();};
 $('exportButton').onclick=exportMP3;
-$('cancelButton').onclick=()=>{if(!run)return;run.canceled=true;if(run.transcriptionController)run.transcriptionController.abort();if(run.assetController)run.assetController.abort();if(run.decoder)run.decoder.stop();if(run.client)run.client.stop();$('cancelButton').disabled=true;$('progressLabel').textContent='Canceling…';};
+$('cancelButton').onclick=()=>{if(!run)return;run.canceled=true;if(run.transcriptionController){stopTranscriptWaiting();run.transcriptionController.abort();}if(run.assetController)run.assetController.abort();if(run.decoder)run.decoder.stop();if(run.client)run.client.stop();$('cancelButton').disabled=true;$('progressLabel').textContent='Canceling…';};
 $('shareButton').onclick=async()=>{if(!output)return;try{await navigator.share({files:[output.file]});}catch(error){if(error.name!=='AbortError')fail('Sharing was unavailable. Use Download MP3 instead.');}};
 $('outputName').oninput=discardOutput;
 let dragDepth=0;
@@ -943,6 +932,7 @@ if(document.modelContext?.registerTool){
   for(const tool of tools){try{Promise.resolve(document.modelContext.registerTool(tool,{signal:lifecycle.signal})).catch(()=>{});}catch(_){}}
 }
 })();
+
 </script>
 </body>
 </html>
