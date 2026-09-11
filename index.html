@@ -4,29 +4,32 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#10131c">
-<meta name="description" content="Just Encode Whatever. Join common audio and video files in order and export their audio as one MP3. Your files stay on your device.">
+<meta name="description" content="Just Encode Whatever. Join common audio and video files in order and export one MP3 or transcribe speech to plain text.">
 <title>Just Encode Whatever</title>
 <style>
 :root{color-scheme:dark;--bg:#10131c;--surface:#191e2a;--well:#121722;--line:#303847;--ink:#f4f6fa;--muted:#b2bacb;--accent:#ff735f;--focus:#ffd2c7;--success:#a9e3c4;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);line-height:1.5}button,input,a{-webkit-tap-highlight-color:transparent}button,input{font:inherit}button,.button{border:1px solid var(--line);border-radius:12px;background:#252d3c;color:var(--ink);padding:12px 18px;min-height:48px;cursor:pointer;font-weight:650;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:9px;line-height:1.3}button:hover:not(:disabled),.button:hover{background:#303b4e}button:disabled{opacity:.45;cursor:not-allowed}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:4px}.primary{background:var(--accent);border-color:var(--accent);color:#201310}.primary:hover:not(:disabled){background:#ff9382}.quiet{background:transparent;border-color:transparent;color:var(--muted);font-weight:500;padding:10px}.icon{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.app{max-width:1060px;padding:44px 28px max(32px,env(safe-area-inset-bottom));margin:auto}.masthead{display:flex;align-items:center;gap:15px;margin-bottom:34px}.mark{width:49px;height:49px;background:#382523;color:var(--accent);border-radius:15px;display:grid;place-items:center}.mark svg{width:28px;height:28px}h1{font-size:clamp(1.65rem,4vw,2.1rem);line-height:1.2;letter-spacing:-.045em;margin:0}h2{font-size:1.13rem;letter-spacing:-.02em;margin:0}p{margin:8px 0;color:var(--muted)}.subhead{margin:7px 0 0;font-size:.94rem}.format{margin-left:auto;white-space:nowrap;color:var(--muted);font-size:.875rem;letter-spacing:.06em}.layout{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:24px;align-items:start}.panel{background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden}.panel-head{padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:10px}.count{font-size:.875rem;color:var(--muted);margin-top:4px}.drop{margin:0 20px 20px;padding:28px 20px;border:1px dashed #536079;border-radius:14px;background:var(--well);text-align:center;transition:background .15s,border-color .15s}.drop.dragging{background:#3a2629;border-color:var(--accent)}.drop p{font-size:.875rem;margin:12px 0 0}.drop .primary{padding:14px 25px}.empty{text-align:center;padding:22px 24px 38px}.empty strong{font-size:1rem;font-weight:550}.empty p{font-size:.875rem;max-width:310px;margin:8px auto 0}.clips{list-style:none;padding:0 20px;margin:0 0 16px}.clip{position:relative;display:grid;grid-template-columns:36px minmax(0,1fr);gap:12px;padding:18px 0;border-top:1px solid var(--line)}.number{align-self:start;width:32px;height:32px;border-radius:50%;background:#2e3545;display:grid;place-items:center;font-size:.875rem;font-variant-numeric:tabular-nums}.clip.processing .number{background:var(--accent);color:#201310}.clip-name{margin:2px 0 2px;font-size:1rem;font-weight:550;overflow-wrap:anywhere}.clip-meta{color:var(--muted);font-size:.875rem;font-variant-numeric:tabular-nums}.clip-tools{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:9px}.clip-tools button{min-width:44px;min-height:44px;padding:9px}.clip-tools .remove{margin-left:auto;color:#ffc2b9}.clip-tools .preview{font-size:.875rem;font-weight:500;padding:9px 11px}.clip audio{width:100%;margin-top:12px;display:block;height:42px}.order-note{padding:0 24px 22px;font-size:.875rem;margin:0}.export{padding:24px;position:sticky;top:24px}.eyebrow{font-size:.75rem;color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-weight:700;margin-bottom:8px}.export label{display:block;font-size:.875rem;font-weight:550;margin:24px 0 8px}.filename{display:flex;align-items:center;border:1px solid #49536a;border-radius:10px;background:var(--well);padding-right:12px}.filename input{width:100%;min-width:0;border:0;border-radius:10px;background:transparent;color:var(--ink);padding:12px;font-size:1rem}.filename span{color:var(--muted);font-size:.875rem}.settings{display:flex;justify-content:space-between;font-size:.875rem;margin:19px 0;color:var(--muted)}#exportButton{width:100%}.privacy{display:flex;align-items:center;gap:7px;font-size:.8rem;margin-top:17px}.privacy svg{width:16px;height:16px}.progress-area{margin-top:20px;border-top:1px solid var(--line);padding-top:19px}.progress-label{font-size:.875rem;margin:0 0 10px;color:var(--ink);overflow-wrap:anywhere}progress{display:block;width:100%;height:8px;border:0;border-radius:8px;overflow:hidden;background:#303847}progress::-webkit-progress-bar{background:#303847}progress::-webkit-progress-value{background:var(--accent);border-radius:8px}progress::-moz-progress-bar{background:var(--accent)}.progress-bottom{display:flex;align-items:center;justify-content:space-between;font-size:.8rem;color:var(--muted);gap:8px;margin-top:7px}.keep-open{font-size:.8rem;margin:6px 0 0}.error{margin:0 0 20px;padding:14px 17px;border:1px solid #895044;background:#372222;border-radius:12px;color:#ffd0c7;overflow-wrap:anywhere;font-size:.94rem}.result{margin-top:24px;padding:22px 24px;background:#182b27;border:1px solid #395b50;border-radius:16px}.result h2{color:var(--success)}.result p{font-size:.875rem;overflow-wrap:anywhere}.result audio{display:block;width:100%;margin:18px 0}.result-buttons{display:flex;gap:10px;flex-wrap:wrap}.result-buttons .button{background:#b9ecd3;color:#11291e;border-color:#b9ecd3}.result-buttons button{background:transparent}.help{margin-top:30px;color:var(--muted);font-size:.875rem}.help summary{cursor:pointer;color:var(--ink);padding:9px 0;min-height:44px}.help ol{padding-left:21px;max-width:740px}.help li{margin:9px 0}.help a{color:var(--muted)}.footer{font-size:.8rem;color:var(--muted);margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}.footer a{color:inherit}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}@media(max-width:760px){.app{padding:28px 18px max(28px,env(safe-area-inset-bottom))}.masthead{margin-bottom:26px;gap:12px}.format{display:none}.layout{grid-template-columns:1fr;gap:18px}.export{position:static}.panel-head{padding:18px 20px}.drop{padding:24px 15px}.result{margin-top:18px;padding:20px}.subhead{font-size:.875rem}.help{margin-top:22px}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.transcribe-settings{margin-top:24px;padding-top:22px;border-top:1px solid var(--line)}.transcribe-settings p{font-size:.875rem}.transcribe-settings .api-key{display:block;width:100%;min-width:0;background:var(--well);border:1px solid #49536a;border-radius:10px;color:var(--ink);padding:12px;font-size:1rem}.transcribe-settings label{margin-top:18px}.transcribe-settings .key-note{margin:8px 0 16px}.transcribe-settings a{color:var(--focus)}#transcribeButton{width:100%}.transcript-text{display:block;width:100%;min-height:240px;resize:vertical;margin:16px 0;background:var(--well);border:1px solid #49536a;border-radius:12px;padding:15px;color:var(--ink);font:inherit;line-height:1.6}.transcript-text:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
 </style>
 </head>
 <body>
 <main class="app">
-  <header class="masthead"><div class="mark" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="13" rx="4"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3M8 22h8"/></svg></div><div><h1>Just Encode Whatever</h1><p class="subhead">Add audio or video. Save one MP3.</p></div><span class="format">Audio / Video → MP3</span></header>
+  <header class="masthead"><div class="mark" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="13" rx="4"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3M8 22h8"/></svg></div><div><h1>Just Encode Whatever</h1><p class="subhead">Add audio or video. Export or transcribe.</p></div><span class="format">Audio / Video → MP3</span></header>
   <noscript><p class="error">Open this page in a browser with JavaScript enabled to join your audio.</p></noscript>
   <p id="error" class="error" role="alert" hidden></p>
   <div class="layout">
     <section class="panel" aria-labelledby="clipsHeading">
       <div class="panel-head"><div><h2 id="clipsHeading">Your clips</h2><div id="count" class="count" aria-live="polite">No clips added</div></div><button id="clearButton" class="quiet" disabled>Clear all</button></div>
       <div id="dropZone" class="drop"><input id="fileInput" class="sr-only" type="file" accept="audio/*,video/*,.mp3,.m4a,.wav,.flac,.ogg,.wma,.mov,.mp4,.mkv,.webm,.avi" multiple tabindex="-1" aria-label="Select audio or video clips"><button id="addButton" class="primary"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Add audio or video</button><p>MP3, M4A, WAV, FLAC, MOV, MP4, and more.<br>Choose files or drop them here. Videos export as audio only.</p></div>
-      <div id="empty" class="empty"><strong>First added, first played.</strong><p>Your clips join from top to bottom, with no extra gaps.</p></div>
+      <p id="dateStatus" class="order-note" role="status" hidden></p><div id="empty" class="empty"><strong>Oldest recording first.</strong><p>Audio and video are sorted together by recording time.</p></div>
       <ol id="clipList" class="clips" aria-label="Clips in export order"></ol>
-      <p id="orderNote" class="order-note" hidden>New clips go at the end. Use the arrows if you need to adjust the order.</p>
+      <p id="orderNote" class="order-note" hidden>New uploads sort by recording time. File time is used when that is missing. Use the arrows to adjust the order manually.</p>
     </section>
-    <section class="panel export" aria-labelledby="exportHeading"><div class="eyebrow">One finished recording</div><h2 id="exportHeading">Export MP3</h2><label for="outputName">File name</label><div class="filename"><input id="outputName" type="text" value="Combined audio" maxlength="120" autocomplete="off" spellcheck="false"><span>.mp3</span></div><div class="settings"><span>MP3 · Stereo</span><span>192 kbps</span></div><button id="exportButton" class="primary" disabled><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 15v5h14v-5"/></svg>Join &amp; export MP3</button><p class="privacy"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0v4"/></svg>Your files stay on your device.</p><div id="progressArea" class="progress-area" hidden><p id="progressLabel" class="progress-label" role="status">Preparing…</p><progress id="progress" value="0" max="100" aria-label="MP3 export progress"></progress><div class="progress-bottom"><span id="percent">0%</span><button id="cancelButton" class="quiet">Cancel</button></div><p class="keep-open">Keep this page open until the export finishes.</p></div></section>
+    <section class="panel export" aria-labelledby="exportHeading"><div class="eyebrow">One finished recording</div><h2 id="exportHeading">Export MP3</h2><label for="outputName">File name</label><div class="filename"><input id="outputName" type="text" value="Combined audio" maxlength="120" autocomplete="off" spellcheck="false"><span>.mp3</span></div><div class="settings"><span>MP3 · Stereo</span><span>192 kbps</span></div><button id="exportButton" class="primary" disabled><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 15v5h14v-5"/></svg>Join &amp; export MP3</button><p class="privacy"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0v4"/></svg>MP3 export stays on your device.</p><div class="transcribe-settings"><h2>Transcribe audio</h2><p>Plain text in clip order, without timestamps or speaker labels.</p><label for="geminiKey">Gemini API key</label><input id="geminiKey" class="api-key" type="password" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="keyNote" placeholder="Paste your API key"><p id="keyNote" class="key-note">Kept in this tab only. <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener noreferrer">Get a key</a></p><button id="transcribeButton" disabled>Transcribe all</button><p>Transcription sends audio to Google. Use a free-tier project to avoid charges; usage limits apply. Google may use free-tier content to improve its products. <a href="https://ai.google.dev/gemini-api/docs/pricing#gemini-3.5-transcribe" target="_blank" rel="noopener noreferrer">Pricing &amp; data use</a></p></div><div id="progressArea" class="progress-area" hidden><p id="progressLabel" class="progress-label" role="status">Preparing…</p><progress id="progress" value="0" max="100" aria-label="Processing progress"></progress><div class="progress-bottom"><span id="percent">0%</span><button id="cancelButton" class="quiet">Cancel</button></div><p class="keep-open">Keep this page open until processing finishes.</p></div></section>
   </div>
   <section id="result" class="result" aria-labelledby="resultHeading" hidden><h2 id="resultHeading" tabindex="-1">Your MP3 is ready</h2><p id="resultInfo"></p><audio id="resultPlayer" controls preload="metadata" aria-label="Play combined MP3"></audio><div class="result-buttons"><a id="downloadLink" class="button" download>Download MP3</a><button id="shareButton" hidden>Share / Save to Files</button></div><p id="saveHint">On iPhone, use Share / Save to Files, then choose Save to Files.</p></section>
-  <details class="help"><summary>Using iPhone Voice Memos</summary><ol><li>In Voice Memos, select your recordings, tap Share, then <strong>Save to Files</strong>.</li><li>Open this page in Safari, tap <strong>Add audio or video</strong>, and select your exported recordings.</li><li>Check the numbered order, then tap <strong>Join &amp; export MP3</strong>. Save the finished file using the buttons above.</li></ol><p>iPhone may return a group of selected files in its own order. To guarantee your intended sequence, add clips one at a time or use the arrows after adding them.</p><p>Common audio formats include MP3, M4A, AAC, WAV, AIFF, FLAC, OGG, Opus, WMA, and CAF. You can also add MOV, MP4, MKV, WebM, AVI, and other common videos. The first audio track from each video is used; videos without audio cannot be exported.</p><p>Some formats need an extra decoder, downloaded the first time it is needed, about 31 MB. Your files are processed on this device. Protected files and some codecs cannot be converted. Large files need more memory. Keep this page open; reloading clears your clips.</p><p>Preview playback depends on your browser. A clip that cannot preview may still export.</p><p>Clips are placed directly back to back. Any silence already in a recording stays in it.</p></details>
+  <section id="transcriptResult" class="result" aria-labelledby="transcriptHeading" hidden><h2 id="transcriptHeading" tabindex="-1">Your transcript</h2><p id="transcriptInfo" role="status"></p><textarea id="transcriptText" class="transcript-text" readonly aria-label="Plain-text transcript"></textarea><div class="result-buttons"><button id="copyTranscript" disabled>Copy text</button><button id="shareTranscript" hidden>Share / Messages</button><a id="downloadTranscript" class="button" download hidden>Download TXT</a></div><p id="copyStatus" role="status"></p></section>
+  <details class="help"><summary>Using iPhone Voice Memos</summary><ol><li>In Voice Memos, select your recordings, tap Share, then <strong>Save to Files</strong>.</li><li>Open this page in Safari, tap <strong>Add audio or video</strong>, and select your exported recordings.</li><li>Check the numbered order, then tap <strong>Join &amp; export MP3</strong>. Save the finished file using the buttons above.</li></ol><p>Uploads are sorted by their embedded recording time, including the time of day. If it is missing, the file’s modification time is used and labeled File time. Files with no usable date keep their upload order at the end. Editing or exporting a file can change its date. New uploads sort the queue again; use the arrows afterward for a manual adjustment.</p><p>Common audio formats include MP3, M4A, AAC, WAV, AIFF, FLAC, OGG, Opus, WMA, and CAF. You can also add MOV, MP4, MKV, WebM, AVI, and other common videos. The first audio track from each video is used; videos without audio cannot be exported.</p><p>Reading recording dates and converting some formats needs an extra decoder, downloaded when first needed, about 31 MB. MP3 conversion is processed on this device. Protected files and some codecs cannot be converted. Large files need more memory. Keep this page open; reloading clears your clips.</p><p>Preview playback depends on your browser. A clip that cannot preview may still export.</p><p>Clips are placed directly back to back. Any silence already in a recording stays in it.</p></details>
   <footer class="footer"><span>Just Encode Whatever</span><a href="https://github.com/zhuker/lamejs" target="_blank" rel="noopener noreferrer">MP3 encoder: lamejs · LGPL</a><a href="https://lame.sourceforge.net" target="_blank" rel="noopener noreferrer">LAME</a><a href="https://github.com/ffmpegwasm/ffmpeg.wasm" target="_blank" rel="noopener noreferrer">Media decoder: FFmpeg.wasm</a></footer>
 </main>
 <script id="encoder-source" type="text/plain">/* lamejs, unchanged upstream source. https://github.com/zhuker/lamejs
@@ -384,6 +387,20 @@ self.onmessage = async ({data: {id, type, coreURL, wasmURL, file}}) => {
       core = await createFFmpegCore({mainScriptUrlOrBlob: coreURL + '#' + btoa(JSON.stringify({wasmURL}))});
       core.FS.mkdir('/input');
       self.postMessage({id, ok: true});
+    } else if(type === 'metadata') {
+      let mounted=false;
+      try {
+        core.setLogger(()=>{});
+        core.FS.mount(core.FS.filesystems.WORKERFS,{blobs:[{name:'source',data:file}]},'/input');mounted=true;
+        core.ffprobe('-v','error','-show_entries','format_tags:stream_tags','-of','json','-o','/metadata.json','/input/source');
+        // ffprobe can leave core.ret unchanged; validate the emitted JSON itself.
+        const metadata=JSON.parse(core.FS.readFile('/metadata.json',{encoding:'utf8'}));
+        self.postMessage({id,metadata});
+      } finally {
+        if(mounted)core.FS.unmount('/input');
+        try{core.FS.unlink('/metadata.json');}catch(_){}
+        core.reset();
+      }
     } else if(type === 'decode') {
       let mounted = false, logs = [];
       try {
@@ -411,12 +428,115 @@ self.onmessage = async ({data: {id, type, coreURL, wasmURL, file}}) => {
   } catch(error) {self.postMessage({id, error: error.message || 'The media decoder could not process this file.'});}
 };
 </script>
+<script id="recording-time-source">
+window.JEWRecordingTime=(()=>{
+  function timestamp(value){
+    if(typeof value!=='string'||!/\d{1,2}:\d{2}/.test(value))return null;
+    const normalized=value.trim().replace(/^(\d{4}-\d{2}-\d{2}) /,'$1T').replace(/([+-]\d{2})(\d{2})$/,'$1:$2');
+    const time=Date.parse(normalized);
+    return Number.isFinite(time)&&time>Date.UTC(1904,0,1)?time:null;
+  }
+  function fromMetadata(metadata){
+    const tags=[metadata.format?.tags,...(metadata.streams||[]).map(stream=>stream.tags)].filter(Boolean)
+      .map(values=>Object.fromEntries(Object.entries(values).map(([key,value])=>[key.toLowerCase(),value])));
+    for(const name of ['com.apple.quicktime.creationdate','recording_time','date_recorded','creation_time','icrd','idit','date']){
+      for(const values of tags){const time=timestamp(values[name]);if(time!==null)return time;}
+    }
+    for(const values of tags){const time=timestamp((values.origination_date||'')+'T'+(values.origination_time||''));if(time!==null)return time;}
+    return null;
+  }
+  function fallback(file){return Number.isFinite(file.lastModified)&&file.lastModified>0?file.lastModified:null;}
+  function compare(a,b){const at=a.recordedAt??a.fileTime??Infinity,bt=b.recordedAt??b.fileTime??Infinity;return at===bt?a.id-b.id:at-bt;}
+  return{timestamp,fromMetadata,fallback,compare};
+})();
+</script>
+<script id="transcription-source">
+// Google API: https://ai.google.dev/gemini-api/docs/transcribe
+window.JEWTranscription = (() => {
+  const RATE=16000, MAX_SAMPLES=RATE*300;
+  const abort=()=>new DOMException('Transcription canceled','AbortError');
+  function check(signal){if(signal?.aborted)throw abort();}
+  function chunkEnd(samples,start){
+    const end=Math.min(start+MAX_SAMPLES,samples.length);
+    if(end===samples.length)return end;
+    // Prefer a quiet 20 ms window near the limit; every sample is sent once.
+    const windowSize=RATE/50;
+    for(let i=end-windowSize;i>=end-RATE*2;i-=windowSize){
+      let energy=0;for(let j=i;j<i+windowSize;j++)energy+=samples[j]*samples[j];
+      if(energy/windowSize<0.000036)return i+windowSize/2;
+    }
+    return end;
+  }
+  function wav(samples){
+    const bytes=new Uint8Array(44+samples.length*2),view=new DataView(bytes.buffer);
+    const label=(offset,value)=>{for(let i=0;i<value.length;i++)bytes[offset+i]=value.charCodeAt(i);};
+    label(0,'RIFF');view.setUint32(4,bytes.length-8,true);label(8,'WAVE');label(12,'fmt ');
+    view.setUint32(16,16,true);view.setUint16(20,1,true);view.setUint16(22,1,true);
+    view.setUint32(24,RATE,true);view.setUint32(28,RATE*2,true);view.setUint16(32,2,true);view.setUint16(34,16,true);
+    label(36,'data');view.setUint32(40,samples.length*2,true);
+    for(let i=0;i<samples.length;i++){const v=Math.max(-1,Math.min(1,samples[i]));view.setInt16(44+i*2,Math.round(v*(v<0?32768:32767)),true);}
+    return bytes;
+  }
+  function base64(bytes){
+    const parts=[];
+    for(let i=0;i<bytes.length;i+=0x8000)parts.push(String.fromCharCode(...bytes.subarray(i,i+0x8000)));
+    return btoa(parts.join(''));
+  }
+  function transcriptText(data){
+    if(data.status&&data.status!=='completed')throw new Error('Google did not finish this section. Completed text has been kept below.');
+    if(typeof data.output_text==='string')return data.output_text.trim();
+    const steps=data.steps;
+    if(!Array.isArray(steps))throw new Error('Google returned an unreadable transcript response.');
+    const content=steps.filter(step=>step.type==='model_output').flatMap(step=>step.content||[]);
+    return content.filter(part=>part.type==='text'&&typeof part.text==='string').map(part=>part.text).join('').trim();
+  }
+  async function request(bytes,key,signal){
+    check(signal);
+    const controller=new AbortController();let timedOut=false;
+    const cancel=()=>controller.abort();signal?.addEventListener('abort',cancel,{once:true});
+    const timer=setTimeout(()=>{timedOut=true;controller.abort();},180000);
+    try{
+      const response=await fetch('https://generativelanguage.googleapis.com/v1beta/interactions',{
+        method:'POST',credentials:'omit',redirect:'error',signal:controller.signal,
+        headers:{'Content-Type':'application/json','x-goog-api-key':key},
+        body:JSON.stringify({model:'gemini-3.5-transcribe',store:false,
+          input:[{type:'audio',mime_type:'audio/wav',data:base64(bytes)}],
+          generation_config:{transcription_config:{mode:{type:'verbatim'}}}})
+      });
+      if(!response.ok){
+        const messages={400:'Google rejected this audio request. Check that your key has access to Gemini 3.5 Transcribe.',
+          401:'Google did not accept this API key. Check the key and try again.',
+          403:'This API key does not have access. Check its project and API restrictions.',
+          404:'Gemini 3.5 Transcribe is not available for this API project.',
+          429:'Google’s usage limit was reached. Completed text has been kept below. Try again after your quota resets.'};
+        throw new Error(messages[response.status]||'Google could not finish the request. Completed text has been kept below. Try again later.');
+      }
+      const data=await response.json();check(signal);return transcriptText(data);
+    }catch(error){
+      check(signal);
+      if(timedOut)throw new Error('Google took too long to respond. Completed text has been kept below. Try again later.');
+      if(error instanceof TypeError)throw new Error('Could not reach Google. Check your internet connection and browser access.');
+      throw error;
+    }finally{clearTimeout(timer);signal?.removeEventListener('abort',cancel);}
+  }
+  async function transcribe(samples,key,signal,onChunk){
+    if(!samples.length)throw new Error('There is no audio to transcribe.');
+    let start=0;
+    while(start<samples.length){
+      check(signal);const end=chunkEnd(samples,start);
+      const text=await request(wav(samples.subarray(start,end)),key,signal);
+      check(signal);onChunk(text,end/samples.length);start=end;
+    }
+  }
+  return {RATE,MAX_SAMPLES,chunkEnd,wav,transcriptText,request,transcribe};
+})();
+</script>
 <script id="app-source">
 (() => {
 'use strict';
 const $=id=>document.getElementById(id);
 const clips=[];
-let nextId=1, busy=false, run=null, output=null;
+let nextId=1, busy=false, run=null, output=null, transcriptURL=null, dateJob=null;
 const SAMPLE_RATE=44100, CHUNK=1152*96;
 const AUDIO_EXTENSIONS=['mp3','m4a','m4b','aac','wav','wave','aif','aiff','aifc','caf','flac','ogg','oga','opus','wma','amr','3ga','ac3','aiffc','au','snd','mka','mp2','a52','ape','wv'];
 const VIDEO_EXTENSIONS=['mov','mp4','m4v','webm','mkv','avi','mpg','mpeg','mpe','m2v','mts','m2ts','ts','m2t','3gp','3g2','wmv','asf','flv','f4v','vob','ogv'];
@@ -433,10 +553,18 @@ function size(n){return n<1048576?(n/1024).toFixed(0)+' KB':(n/1048576).toFixed(
 function duration(s){s=Math.round(s);const h=Math.floor(s/3600),m=Math.floor(s%3600/60);return (h?h+':'+String(m).padStart(2,'0'):m)+':'+String(s%60).padStart(2,'0');}
 function fail(message){$('error').textContent=message;$('error').hidden=!message;}
 function discardOutput(){if(!output)return;$('resultPlayer').pause();$('resultPlayer').removeAttribute('src');$('resultPlayer').load();URL.revokeObjectURL(output.url);output=null;$('result').hidden=true;$('downloadLink').removeAttribute('href');}
+function discardTranscript(){if(transcriptURL)URL.revokeObjectURL(transcriptURL);transcriptURL=null;$('transcriptResult').hidden=true;$('transcriptText').value='';$('transcriptInfo').textContent='';$('copyStatus').textContent='';$('copyTranscript').disabled=true;$('downloadTranscript').hidden=true;$('downloadTranscript').removeAttribute('href');}
+function invalidateResults(){discardOutput();discardTranscript();}
 function summary(){const total=clips.reduce((n,c)=>n+c.file.size,0);const known=clips.length&&clips.every(c=>Number.isFinite(c.duration));$('count').textContent=clips.length?clips.length+' clip'+(clips.length===1?'':'s')+' · '+size(total)+(known?' · '+duration(clips.reduce((n,c)=>n+c.duration,0)):''):'No clips added';}
-function setBusy(value){busy=value;$('addButton').disabled=busy||!isSupported;$('fileInput').disabled=busy||!isSupported;$('clearButton').disabled=busy||!clips.length;$('exportButton').disabled=busy||!clips.length||!isSupported;$('outputName').disabled=busy;render();}
-function move(id,step){if(busy)return;const i=clips.findIndex(c=>c.id===id),j=i+step;if(i<0||j<0||j>=clips.length)return;[clips[i],clips[j]]=[clips[j],clips[i]];discardOutput();render();const b=document.querySelector('[data-id="'+id+'"] [data-action="'+(step<0?'up':'down')+'"]');if(b&&!b.disabled)b.focus();}
-function remove(id){if(busy)return;const i=clips.findIndex(c=>c.id===id);if(i<0)return;cleanup(clips[i]);clips.splice(i,1);discardOutput();render();}
+function clipMeta(clip){
+  const time=clip.recordedAt??clip.fileTime;
+  const label=clip.recordedAt!=null?'Recorded ':clip.fileTime!=null?'File time ':'';
+  const stamp=time!=null?label+new Date(time).toLocaleString(undefined,{year:'numeric',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}):'No date available';
+  return size(clip.file.size)+(Number.isFinite(clip.duration)?' · '+duration(clip.duration):'')+' · '+(!clip.dateChecked?'Reading recording time…':stamp);
+}
+function setBusy(value){busy=value;$('addButton').disabled=busy||!isSupported;$('fileInput').disabled=busy||!isSupported;$('clearButton').disabled=busy||!clips.length;$('exportButton').disabled=busy||!clips.length||!isSupported;$('outputName').disabled=busy;$('geminiKey').disabled=busy;render();}
+function move(id,step){if(busy||dateJob)return;const i=clips.findIndex(c=>c.id===id),j=i+step;if(i<0||j<0||j>=clips.length)return;[clips[i],clips[j]]=[clips[j],clips[i]];invalidateResults();$('dateStatus').textContent='Manual order. New uploads sort by recording time again.';render();const b=document.querySelector('[data-id="'+id+'"] [data-action="'+(step<0?'up':'down')+'"]');if(b&&!b.disabled)b.focus();}
+function remove(id){if(busy)return;const i=clips.findIndex(c=>c.id===id);if(i<0)return;cleanup(clips[i]);clips.splice(i,1);invalidateResults();render();}
 function cleanup(c){if(c.probe){c.probe.pause();c.probe.removeAttribute('src');c.probe.load();c.probe=null;}if(c.player){c.player.pause();c.player.removeAttribute('src');c.player.load();c.player=null;}if(c.url)URL.revokeObjectURL(c.url);}
 function render(){
   const list=$('clipList');for(const c of clips){if(c.player){c.player.pause();c.player.removeAttribute('src');c.player.load();c.player=null;}}list.replaceChildren();
@@ -445,29 +573,53 @@ function render(){
     const number=document.createElement('span');number.className='number';number.textContent=i+1;
     const body=document.createElement('div'),name=document.createElement('div'),meta=document.createElement('div'),bar=document.createElement('div');
     name.className='clip-name';name.textContent=c.file.name;
-    meta.className='clip-meta';meta.textContent=size(c.file.size)+(Number.isFinite(c.duration)?' · '+duration(c.duration):'');
+    meta.className='clip-meta';meta.textContent=clipMeta(c);
     bar.className='clip-tools';
     const preview=document.createElement('button');preview.className='preview';preview.textContent='Listen';preview.disabled=busy;preview.setAttribute('aria-label','Listen to '+c.file.name);preview.setAttribute('aria-expanded','false');
     preview.onclick=()=>{if(c.player&&c.player.isConnected){c.player.pause();c.player.remove();preview.textContent='Listen';preview.setAttribute('aria-expanded','false');return;}for(const a of document.querySelectorAll('audio'))a.pause();const a=document.createElement('audio');a.controls=true;a.preload='none';a.src=c.url;a.setAttribute('aria-label','Play '+c.file.name);c.player=a;body.append(a);preview.textContent='Hide player';preview.setAttribute('aria-expanded','true');a.play().catch(()=>{});};bar.append(preview);
     for(const [action,label,handler,disabled] of [['up','Move up',()=>move(c.id,-1),i===0],['down','Move down',()=>move(c.id,1),i===clips.length-1],['remove','Remove',()=>remove(c.id),false]]){
-      const b=document.createElement('button');b.className=action==='remove'?'quiet remove':'quiet';b.dataset.action=action;b.setAttribute('aria-label',label+' '+c.file.name);b.title=label;b.disabled=busy||disabled;b.append(icon(action));b.onclick=handler;bar.append(b);
+      const b=document.createElement('button');b.className=action==='remove'?'quiet remove':'quiet';b.dataset.action=action;b.setAttribute('aria-label',label+' '+c.file.name);b.title=label;b.disabled=busy||disabled||(action!=='remove'&&!!dateJob);b.append(icon(action));b.onclick=handler;bar.append(b);
     }
     body.append(name,meta,bar);row.append(number,body);list.append(row);
   });
-  $('empty').hidden=!!clips.length;$('orderNote').hidden=!clips.length;$('clearButton').disabled=busy||!clips.length;$('exportButton').disabled=busy||!clips.length||!isSupported;summary();
+  $('empty').hidden=!!clips.length;$('orderNote').hidden=!clips.length;$('clearButton').disabled=busy||!clips.length;$('exportButton').disabled=busy||!!dateJob||!clips.length||!isSupported;$('transcribeButton').disabled=busy||!!dateJob||!clips.length||!isSupported;summary();
 }
 function addFiles(files){
   if(busy||!isSupported)return;
   const rejected=[];let added=0;
   for(const file of Array.from(files)){
     if(!isMedia(file)){rejected.push(file.name);continue;}
-    // Append synchronously; metadata completion never changes the queue order.
-    const clip={id:nextId++,file,url:URL.createObjectURL(file),duration:null,probe:null,player:null};clips.push(clip);added++;
+    // Append immediately; recording dates determine the final export order.
+    const clip={id:nextId++,file,url:URL.createObjectURL(file),duration:null,probe:null,player:null,recordedAt:null,fileTime:JEWRecordingTime.fallback(file),dateChecked:false};clips.push(clip);added++;
     const probe=new Audio();clip.probe=probe;probe.preload='metadata';
-    const complete=()=>{if(Number.isFinite(probe.duration))clip.duration=probe.duration;probe.onloadedmetadata=null;probe.onerror=null;probe.removeAttribute('src');probe.load();clip.probe=null;summary();const row=document.querySelector('[data-id="'+clip.id+'"] .clip-meta');if(row)row.textContent=size(file.size)+(Number.isFinite(clip.duration)?' · '+duration(clip.duration):'');};
+    const complete=()=>{if(Number.isFinite(probe.duration))clip.duration=probe.duration;probe.onloadedmetadata=null;probe.onerror=null;probe.removeAttribute('src');probe.load();clip.probe=null;summary();const row=document.querySelector('[data-id="'+clip.id+'"] .clip-meta');if(row)row.textContent=clipMeta(clip);};
     probe.onloadedmetadata=complete;probe.onerror=complete;probe.src=clip.url;
   }
-  if(added)discardOutput();fail(rejected.length?'These files were not added because they are empty or not a recognized audio or video file: '+rejected.join(', '):'');render();
+  if(added)invalidateResults();fail(rejected.length?'These files were not added because they are empty or not a recognized audio or video file: '+rejected.join(', '):'');render();if(added)readRecordingTimes();
+}
+async function readRecordingTimes(){
+  if(dateJob||!clips.some(clip=>!clip.dateChecked))return;
+  const job={canceled:false,decoder:null,coreURLs:[],assetController:null};dateJob=job;let failed=false;
+  $('dateStatus').hidden=false;$('dateStatus').textContent='Reading recording times…';render();
+  try{
+    if(navigator.onLine===false)throw new Error('Offline');
+    await loadMediaDecoder(job);checkCanceled(job);
+    while(true){
+      const clip=clips.find(item=>!item.dateChecked);if(!clip)break;
+      clip.dateChecked=true;
+      try{const {metadata}=await job.decoder.request('metadata',{file:clip.file});checkCanceled(job);clip.recordedAt=JEWRecordingTime.fromMetadata(metadata);}
+      catch(error){checkCanceled(job);failed=true;}
+    }
+  }catch(error){if(!job.canceled){failed=true;clips.forEach(clip=>{clip.dateChecked=true;});}}
+  finally{
+    if(job.decoder)job.decoder.stop();if(job.assetController)job.assetController.abort();job.coreURLs.forEach(url=>URL.revokeObjectURL(url));
+    if(dateJob===job)dateJob=null;
+    if(!job.canceled){clips.sort(JEWRecordingTime.compare);invalidateResults();}
+    $('dateStatus').hidden=!clips.length;
+    $('dateStatus').textContent=failed?'Some recording dates could not be read. File times are used where available.':'Sorted oldest first. Files without recording dates use their labeled file times.';
+    render();
+    if(clips.some(clip=>!clip.dateChecked))readRecordingTimes();
+  }
 }
 function workerClient(kind='encoder'){
   const source=kind==='decoder'?$('decoder-source').textContent:$('encoder-source').textContent+'\n'+$('worker-source').textContent;
@@ -536,7 +688,7 @@ async function loadMediaDecoder(job){
   checkCanceled(job);
 }
 async function exportMP3(){
-  if(busy||!clips.length||!isSupported)return;
+  if(busy||dateJob||!clips.length||!isSupported)return;
   fail('');discardOutput();setBusy(true);$('progressArea').hidden=false;$('cancelButton').disabled=false;updateProgress(0,'Preparing your clips…');
   const job={canceled:false,client:null,decoder:null,coreURLs:[],assetController:null};run=job;const filename=outputFilename();let wake=null;let completed=false;const selected=clips.slice();
   if(navigator.wakeLock)navigator.wakeLock.request('screen').then(lock=>{if(run!==job||job.canceled)lock.release().catch(()=>{});else wake=lock;}).catch(()=>{});
@@ -569,11 +721,69 @@ async function exportMP3(){
   }catch(error){if(job.canceled||error.name==='AbortError'){updateProgress(0,'Export canceled. Your clips are still here.');}else{fail(error.message||'Export failed. Try fewer or shorter clips.');updateProgress(0,'Export could not finish.');}}
   finally{if(job.client)job.client.stop();if(job.decoder)job.decoder.stop();if(job.assetController)job.assetController.abort();job.coreURLs.forEach(url=>URL.revokeObjectURL(url));run=null;if(wake)wake.release().catch(()=>{});setBusy(false);$('progressArea').hidden=true;if(completed)$('resultHeading').focus();}
 }
+function updateTranscript(parts,message){
+  const text=parts.map(chunks=>chunks.filter(Boolean).join(' ')).filter(Boolean).join('\n\n');
+  $('transcriptText').value=text;$('transcriptInfo').textContent=message;$('transcriptResult').hidden=false;
+  $('copyTranscript').disabled=!text;$('downloadTranscript').hidden=!text;$('shareTranscript').hidden=!text||!navigator.share;$('shareTranscript').disabled=busy;
+  if(transcriptURL)URL.revokeObjectURL(transcriptURL);transcriptURL=null;
+  if(text){transcriptURL=URL.createObjectURL(new Blob([text],{type:'text/plain;charset=utf-8'}));$('downloadTranscript').href=transcriptURL;$('downloadTranscript').download=outputFilename().replace(/\.mp3$/i,'.txt');}
+  else $('downloadTranscript').removeAttribute('href');
+}
+async function transcribeAll(){
+  if(busy||dateJob||!clips.length||!isSupported)return;
+  let key=$('geminiKey').value.trim();
+  if(!key||/\s/.test(key)){fail('Paste your Gemini API key in the key field to transcribe.');$('geminiKey').focus();return;}
+  fail('');discardTranscript();setBusy(true);$('progressArea').hidden=false;$('cancelButton').disabled=false;
+  updateProgress(0,'Preparing audio for transcription…');
+  const job={canceled:false,client:null,decoder:null,coreURLs:[],assetController:null,transcriptionController:new AbortController()};
+  run=job;const selected=clips.slice(),parts=selected.map(()=>[]);let wake=null,done=0,finished=false;
+  if(navigator.wakeLock)navigator.wakeLock.request('screen').then(lock=>{if(run!==job||job.canceled)lock.release().catch(()=>{});else wake=lock;}).catch(()=>{});
+  try{
+    for(let i=0;i<selected.length;i++){
+      checkCanceled(job);const clip=selected[i],label='Clip '+(i+1)+' of '+selected.length;
+      updateProgress(i/selected.length*100,'Reading '+label.toLowerCase()+'…');
+      let buffer=await decodeClip(clip,job);checkCanceled(job);
+      clip.duration=buffer.duration;summary();
+      const rate=JEWTranscription.RATE;
+      const mixer=new OfflineContext(1,Math.ceil(buffer.duration*rate),rate),source=mixer.createBufferSource();
+      source.buffer=buffer;source.connect(mixer.destination);source.start();
+      const mono=await mixer.startRendering();source.disconnect();source.buffer=null;buffer=null;checkCanceled(job);
+      updateProgress(i/selected.length*100,'Transcribing '+label.toLowerCase()+'…');
+      try{
+        await JEWTranscription.transcribe(mono.getChannelData(0),key,job.transcriptionController.signal,(text,fraction)=>{
+          parts[i].push(text);updateTranscript(parts,'Transcribing '+label.toLowerCase()+'…');
+          updateProgress((i+fraction)/selected.length*100,'Transcribing '+label.toLowerCase()+'…');
+        });
+      }catch(error){checkCanceled(job);throw new Error('"'+clip.file.name+'": '+error.message);}
+      done++;
+    }
+    finished=true;
+    const empty=parts.filter(chunks=>!chunks.some(text=>text.trim())).length;
+    updateTranscript(parts,'Complete · '+done+' clip'+(done===1?'':'s')+(empty?' · '+empty+' returned no text.':''));
+    updateProgress(100,'Your transcript is ready.');
+  }catch(error){
+    const canceled=job.canceled||error.name==='AbortError';
+    if(!canceled)fail(error.message||'Transcription could not finish.');
+    updateTranscript(parts,(canceled?'Canceled':'Incomplete')+' · '+done+' of '+selected.length+' clips completed. Any text received is kept below.');
+  }finally{
+    job.transcriptionController.abort();if(job.decoder)job.decoder.stop();if(job.assetController)job.assetController.abort();
+    job.coreURLs.forEach(url=>URL.revokeObjectURL(url));key='';run=null;if(wake)wake.release().catch(()=>{});
+    setBusy(false);$('shareTranscript').disabled=false;$('progressArea').hidden=true;if(finished||$('transcriptText').value)$('transcriptHeading').focus();
+  }
+}
+$('transcribeButton').onclick=transcribeAll;
+$('copyTranscript').onclick=async()=>{try{await navigator.clipboard.writeText($('transcriptText').value);$('copyStatus').textContent='Copied.';}catch(_){$('transcriptText').focus();$('transcriptText').select();$('copyStatus').textContent='Text selected. Use Copy from your device’s menu.';}};
+$('shareTranscript').onclick=async()=>{
+  const text=$('transcriptText').value;if(!text)return;
+  try{await navigator.share({text});$('copyStatus').textContent='';}
+  catch(error){if(error.name!=='AbortError')$('copyStatus').textContent='Sharing was unavailable. Use Copy text or Download TXT.';}
+};
+window.addEventListener('pagehide',()=>{$('geminiKey').value='';if(run?.transcriptionController){run.canceled=true;run.transcriptionController.abort();if(run.assetController)run.assetController.abort();if(run.decoder)run.decoder.stop();}});
 $('addButton').onclick=()=>$('fileInput').click();
 $('fileInput').onchange=e=>{addFiles(e.target.files);e.target.value='';};
-$('clearButton').onclick=()=>{if(busy)return;clips.forEach(cleanup);clips.length=0;discardOutput();fail('');render();};
+$('clearButton').onclick=()=>{if(busy)return;if(dateJob){dateJob.canceled=true;if(dateJob.assetController)dateJob.assetController.abort();if(dateJob.decoder)dateJob.decoder.stop();}clips.forEach(cleanup);clips.length=0;invalidateResults();$('dateStatus').hidden=true;fail('');render();};
 $('exportButton').onclick=exportMP3;
-$('cancelButton').onclick=()=>{if(!run)return;run.canceled=true;if(run.assetController)run.assetController.abort();if(run.decoder)run.decoder.stop();if(run.client)run.client.stop();$('cancelButton').disabled=true;$('progressLabel').textContent='Canceling…';};
+$('cancelButton').onclick=()=>{if(!run)return;run.canceled=true;if(run.transcriptionController)run.transcriptionController.abort();if(run.assetController)run.assetController.abort();if(run.decoder)run.decoder.stop();if(run.client)run.client.stop();$('cancelButton').disabled=true;$('progressLabel').textContent='Canceling…';};
 $('shareButton').onclick=async()=>{if(!output)return;try{await navigator.share({files:[output.file]});}catch(error){if(error.name!=='AbortError')fail('Sharing was unavailable. Use Download MP3 instead.');}};
 $('outputName').oninput=discardOutput;
 let dragDepth=0;

@@ -9,7 +9,7 @@ const {execFileSync} = require('node:child_process');
 
 const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
 const source = id => html.match(new RegExp('<script id="' + id + '"[^>]*>([\\s\\S]*?)</script>'))[1];
-for (const id of ['app-source', 'decoder-source', 'worker-source', 'encoder-source']) new vm.Script(source(id));
+for (const id of ['app-source', 'decoder-source', 'worker-source', 'encoder-source', 'recording-time-source', 'transcription-source']) new vm.Script(source(id));
 
 // Minimal DOM/Worker stand-ins for the application's import and lifecycle logic.
 function applicationContext() {
@@ -102,6 +102,7 @@ async function request(type, data = {}) {
 }
 const encoder = vm.createContext({Blob, self: {postMessage: message => {reply = message;}}});
 vm.runInContext(source('encoder-source') + '\n' + source('worker-source'), encoder);
+const dates=vm.createContext({window:{}});vm.runInContext(source('recording-time-source'),dates);
 function encode(type, data = {}) {
   reply = null;
   encoder.self.onmessage({data: {id: ++serial, type, ...data}});
@@ -121,6 +122,18 @@ function fixture(name, audioCodec, video = false, frequency = 440, extra = []) {
   try {
     await testApplication();
     await request('init', {coreURL: 'https://test.invalid/core.js', wasmURL: 'https://test.invalid/core.wasm'});
+    const metadataClips=[];
+    for(const [name,time,video] of [['later.m4a','2026-09-11T14:36:00Z',false],['earlier.mov','2026-09-11T14:32:00Z','mpeg4']]){
+      const file=fixture(name,'aac',video,440,['-metadata','creation_time='+time]);
+      const {metadata}=await request('metadata',{file});
+      const recordedAt=dates.window.JEWRecordingTime.fromMetadata(metadata);
+      assert.equal(recordedAt,Date.parse(time),name+' embedded recording time');
+      metadataClips.push({id:metadataClips.length+1,name,recordedAt});
+    }
+    metadataClips.sort(dates.window.JEWRecordingTime.compare);
+    assert.deepEqual(metadataClips.map(clip=>clip.name),['earlier.mov','later.m4a']);
+    assert.equal(dates.window.JEWRecordingTime.fromMetadata((await request('metadata',{file:fixture('undated.wav','pcm_s16le')})).metadata),null);
+    console.log('PASS embedded MOV/M4A recording times, mixed order, and missing date');
     encode('init');
     let totalFrames = 0;
     const formats = [
